@@ -1,0 +1,29 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Secrets - never commit these
+.env
+*.pem
+profiles.yml
+
+# dbt
+dbt/**/target/
+dbt/**/dbt_packages/
+dbt/**/logs/
+.user.yml
+
+# Airflow
+airflow/logs/
+airflow/airflow.cfg
+airflow/airflow.db
+airflow/webserver_config.py
+
+# Raw data landed locally before it goes to S3
+data/raw/*
+!data/raw/.gitkeep
+
+# OS
+.DS_Store
