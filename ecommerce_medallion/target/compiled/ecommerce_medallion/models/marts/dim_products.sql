@@ -1,0 +1,1 @@
+select * from DE_ECOMMERCE_DB.silver.stg_products

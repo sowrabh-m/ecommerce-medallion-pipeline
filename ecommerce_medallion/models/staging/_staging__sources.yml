@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: DE_ECOMMERCE_DB
+    schema: BRONZE
+    tables:
+      - name: customers
+      - name: products
+      - name: orders
+      - name: order_items

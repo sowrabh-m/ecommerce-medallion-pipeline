@@ -1,0 +1,2147 @@
+[0m22:50:43.200425 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1093a6120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ab5a710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ab5a990>]}
+
+
+============================== 22:50:43.203463 | af9a1781-882d-43eb-8b89-44d215c11086 ==============================
+[0m22:50:43.203463 [info ] [MainThread]: Running with dbt=1.12.5
+[0m22:50:43.203772 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'fail_fast': 'False', 'introspect': 'True', 'empty': 'None', 'warn_error': 'None', 'use_experimental_parser': 'False', 'printer_width': '80', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'debug': 'False', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/Users/sowrabhmanjappa/.dbt', 'write_json': 'True', 'static_parser': 'True', 'cache_selected_only': 'False', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'maximum_seed_size_mib': '1', 'no_print': 'None', 'target_path': 'None', 'log_cache_events': 'False', 'quiet': 'False', 'log_path': '/Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/logs', 'log_format': 'default'}
+[0m22:50:43.213021 [info ] [MainThread]: dbt version: 1.12.5
+[0m22:50:43.213205 [info ] [MainThread]: python version: 3.14.5
+[0m22:50:43.213328 [info ] [MainThread]: python path: /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/.venv/bin/python3.14
+[0m22:50:43.213442 [info ] [MainThread]: os info: macOS-26.6.2-arm64-arm-64bit-Mach-O
+[0m22:50:43.761457 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:50:43.761763 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:50:43.761916 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:50:43.824983 [info ] [MainThread]: Using profiles dir at /Users/sowrabhmanjappa/.dbt
+[0m22:50:43.825261 [info ] [MainThread]: Using profiles.yml file at /Users/sowrabhmanjappa/.dbt/profiles.yml
+[0m22:50:43.825421 [info ] [MainThread]: Using dbt_project.yml file at /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/dbt_project.yml
+[0m22:50:43.825757 [info ] [MainThread]: adapter type: snowflake
+[0m22:50:43.825892 [info ] [MainThread]: adapter version: 1.12.1
+[0m22:50:43.880575 [info ] [MainThread]: Configuration:
+[0m22:50:43.880849 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:50:43.880995 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:50:43.881132 [info ] [MainThread]: Required dependencies:
+[0m22:50:43.881310 [debug] [MainThread]: Executing "git --help"
+[0m22:50:43.894001 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:50:43.894521 [debug] [MainThread]: STDERR: "b''"
+[0m22:50:43.894683 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:50:43.894839 [info ] [MainThread]: Connection:
+[0m22:50:43.895011 [info ] [MainThread]:   account: XYGKVWH-ZE77093
+[0m22:50:43.895126 [info ] [MainThread]:   user: sowrabhm1
+[0m22:50:43.895248 [info ] [MainThread]:   database: DE_ECOMMERCE_DB
+[0m22:50:43.895357 [info ] [MainThread]:   warehouse: DE_ECOMMERCE_WH
+[0m22:50:43.895469 [info ] [MainThread]:   role: DE_ECOMMERCE_ROLE
+[0m22:50:43.895579 [info ] [MainThread]:   schema: SILVER
+[0m22:50:43.895686 [info ] [MainThread]:   authenticator: None
+[0m22:50:43.895790 [info ] [MainThread]:   oauth_client_id: None
+[0m22:50:43.895895 [info ] [MainThread]:   query_tag: None
+[0m22:50:43.895995 [info ] [MainThread]:   client_session_keep_alive: False
+[0m22:50:43.896098 [info ] [MainThread]:   host: None
+[0m22:50:43.896198 [info ] [MainThread]:   port: None
+[0m22:50:43.896296 [info ] [MainThread]:   proxy_host: None
+[0m22:50:43.896396 [info ] [MainThread]:   proxy_port: None
+[0m22:50:43.896496 [info ] [MainThread]:   protocol: None
+[0m22:50:43.896595 [info ] [MainThread]:   connect_retries: 1
+[0m22:50:43.896694 [info ] [MainThread]:   connect_timeout: None
+[0m22:50:43.896795 [info ] [MainThread]:   retry_on_database_errors: False
+[0m22:50:43.896894 [info ] [MainThread]:   retry_all: False
+[0m22:50:43.896993 [info ] [MainThread]:   insecure_mode: False
+[0m22:50:43.897091 [info ] [MainThread]:   reuse_connections: True
+[0m22:50:43.897193 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m22:50:43.897293 [info ] [MainThread]:   workload_identity_provider: None
+[0m22:50:43.897391 [info ] [MainThread]:   workload_identity_entra_resource: None
+[0m22:50:43.897496 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m22:50:43.897797 [info ] [MainThread]: Registered adapter: snowflake=1.12.1
+[0m22:50:43.972742 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m22:50:43.974310 [debug] [MainThread]: Using snowflake connection "debug"
+[0m22:50:43.974460 [debug] [MainThread]: On debug: select 1 as id
+[0m22:50:43.974585 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:50:45.038824 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.063 seconds
+[0m22:50:45.041245 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:50:45.041840 [info ] [MainThread]: [32mAll checks passed![0m
+[0m22:50:45.050998 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 1.9273624, "process_in_blocks": "0", "process_kernel_time": 0.27665, "process_mem_max_rss": "230227968", "process_out_blocks": "0", "process_user_time": 1.557541}
+[0m22:50:45.052160 [debug] [MainThread]: Command `dbt debug` succeeded at 22:50:45.052011 after 1.93 seconds
+[0m22:50:45.052586 [debug] [MainThread]: Connection 'debug' was left open.
+[0m22:50:45.052886 [debug] [MainThread]: On debug: Close
+[0m22:50:45.192221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f893bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10733ab10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fdbe140>]}
+[0m22:50:45.193187 [debug] [MainThread]: Flushing usage events
+[0m22:50:45.255819 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:56:48.047093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d362120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eb6e710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eb6e990>]}
+
+
+============================== 22:56:48.050428 | 6de27f4f-9479-4161-8790-c43f734db657 ==============================
+[0m22:56:48.050428 [info ] [MainThread]: Running with dbt=1.12.5
+[0m22:56:48.050761 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'printer_width': '80', 'version_check': 'True', 'static_parser': 'True', 'log_format': 'default', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'quiet': 'False', 'partial_parse': 'True', 'maximum_seed_size_mib': '1', 'invocation_command': 'dbt run', 'introspect': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'empty': 'False', 'log_path': '/Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/logs', 'no_print': 'None', 'debug': 'False', 'target_path': 'None', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'profiles_dir': '/Users/sowrabhmanjappa/.dbt', 'warn_error': 'None'}
+[0m22:56:48.600169 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:56:48.600448 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:56:48.600594 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:56:48.731390 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6de27f4f-9479-4161-8790-c43f734db657', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113956fd0>]}
+[0m22:56:48.760971 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6de27f4f-9479-4161-8790-c43f734db657', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113dff240>]}
+[0m22:56:48.761588 [info ] [MainThread]: Registered adapter: snowflake=1.12.1
+[0m22:56:48.844018 [debug] [MainThread]: checksum: 77ffcdfdd87357c644876f58fa7b09a93c3b2beb13b897bb470eb360b14c183a, vars: {}, profile: ecommerce_medallion, target: dev, version: 1.12.5
+[0m22:56:48.844503 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:56:48.845137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6de27f4f-9479-4161-8790-c43f734db657', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113c32650>]}
+[0m22:56:49.551916 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'stg_orders' in
+package 'ecommerce_medallion' (models/staging/_staging__models.yml). Arguments
+to generic tests should be nested under the `arguments` property.
+[0m22:56:49.552225 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '6de27f4f-9479-4161-8790-c43f734db657', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114793110>]}
+[0m22:56:49.721218 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6de27f4f-9479-4161-8790-c43f734db657', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113f0b4d0>]}
+[0m22:56:49.777349 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/manifest.json
+[0m22:56:49.779234 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/semantic_manifest.json
+[0m22:56:49.790583 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/osi_document.json
+[0m22:56:49.797025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6de27f4f-9479-4161-8790-c43f734db657', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1148b2820>]}
+[0m22:56:49.797242 [info ] [MainThread]: Found 8 models, 15 data tests, 4 sources, 562 macros
+[0m22:56:49.797403 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6de27f4f-9479-4161-8790-c43f734db657', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114884650>]}
+[0m22:56:49.798585 [info ] [MainThread]: 
+[0m22:56:49.798752 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m22:56:49.798876 [info ] [MainThread]: 
+[0m22:56:49.799109 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m22:56:49.801446 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DE_ECOMMERCE_DB'
+[0m22:56:49.801697 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DE_ECOMMERCE_DB'
+[0m22:56:49.808563 [debug] [ThreadPool]: Using snowflake connection "list_DE_ECOMMERCE_DB"
+[0m22:56:49.808925 [debug] [ThreadPool]: On list_DE_ECOMMERCE_DB: show terse schemas in database DE_ECOMMERCE_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "list_DE_ECOMMERCE_DB"} */
+[0m22:56:49.809060 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:56:49.808781 [debug] [ThreadPool]: Using snowflake connection "list_DE_ECOMMERCE_DB"
+[0m22:56:49.809228 [debug] [ThreadPool]: On list_DE_ECOMMERCE_DB: show terse schemas in database DE_ECOMMERCE_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "list_DE_ECOMMERCE_DB"} */
+[0m22:56:49.809354 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:56:50.712127 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.902 seconds
+[0m22:56:50.713487 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.904 seconds
+[0m22:56:50.718335 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DE_ECOMMERCE_DB, now create_DE_ECOMMERCE_DB_SILVER_silver)
+[0m22:56:50.719664 [debug] [ThreadPool]: Creating schema "database: "DE_ECOMMERCE_DB"
+schema: "SILVER_silver"
+"
+[0m22:56:50.719008 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DE_ECOMMERCE_DB, now create_DE_ECOMMERCE_DB_SILVER_gold)
+[0m22:56:50.725392 [debug] [ThreadPool]: Creating schema "database: "DE_ECOMMERCE_DB"
+schema: "SILVER_gold"
+"
+[0m22:56:50.726592 [debug] [ThreadPool]: Using snowflake connection "create_DE_ECOMMERCE_DB_SILVER_gold"
+[0m22:56:50.724880 [debug] [ThreadPool]: Using snowflake connection "create_DE_ECOMMERCE_DB_SILVER_silver"
+[0m22:56:50.727231 [debug] [ThreadPool]: On create_DE_ECOMMERCE_DB_SILVER_silver: create schema if not exists DE_ECOMMERCE_DB.SILVER_silver
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "create_DE_ECOMMERCE_DB_SILVER_silver"} */
+[0m22:56:50.726914 [debug] [ThreadPool]: On create_DE_ECOMMERCE_DB_SILVER_gold: create schema if not exists DE_ECOMMERCE_DB.SILVER_gold
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "create_DE_ECOMMERCE_DB_SILVER_gold"} */
+[0m22:56:50.831313 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01c71d16-3203-61bb-0018-14e20014ae8e
+[0m22:56:50.831922 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 003001 (42501): SQL access control error:
+Insufficient privileges to operate on database 'DE_ECOMMERCE_DB'. Your primary role DE_ECOMMERCE_ROLE must have CREATE SCHEMA granted on DATABASE DE_ECOMMERCE_DB.
+[0m22:56:50.832540 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro create_schema
+[0m22:56:50.832913 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m22:56:50.850488 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01c71d16-3203-61e5-0018-14e2001465f2
+[0m22:56:50.851012 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 003001 (42501): SQL access control error:
+Insufficient privileges to operate on database 'DE_ECOMMERCE_DB'. Your primary role DE_ECOMMERCE_ROLE must have CREATE SCHEMA granted on DATABASE DE_ECOMMERCE_DB.
+[0m22:56:50.851595 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro create_schema
+[0m22:56:50.851981 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m22:56:50.853134 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:56:50.853582 [debug] [MainThread]: Connection 'create_DE_ECOMMERCE_DB_SILVER_gold' was left open.
+[0m22:56:50.854013 [debug] [MainThread]: On create_DE_ECOMMERCE_DB_SILVER_gold: Close
+[0m22:56:50.986637 [debug] [MainThread]: Connection 'create_DE_ECOMMERCE_DB_SILVER_silver' was left open.
+[0m22:56:50.987793 [debug] [MainThread]: On create_DE_ECOMMERCE_DB_SILVER_silver: Close
+[0m22:56:51.117376 [info ] [MainThread]: 
+[0m22:56:51.118318 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 1.32 seconds (1.32s).
+[0m22:56:51.119233 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Database Error
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on database 'DE_ECOMMERCE_DB'. Your primary role DE_ECOMMERCE_ROLE must have CREATE SCHEMA granted on DATABASE DE_ECOMMERCE_DB.
+[0m22:56:51.120222 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 3 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m22:56:51.130587 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 3.1625943, "process_in_blocks": "0", "process_kernel_time": 0.305494, "process_mem_max_rss": "250920960", "process_out_blocks": "0", "process_user_time": 2.621297}
+[0m22:56:51.131552 [debug] [MainThread]: Command `dbt run` failed at 22:56:51.131422 after 3.16 seconds
+[0m22:56:51.131965 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113e4b280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1148a7390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1148a5810>]}
+[0m22:56:51.132350 [debug] [MainThread]: Flushing usage events
+[0m22:56:51.174420 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:58:24.579694 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f12120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a71e710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a71e990>]}
+
+
+============================== 22:58:24.582834 | d9363b0b-1ff8-476d-a80f-a4ea46133908 ==============================
+[0m22:58:24.582834 [info ] [MainThread]: Running with dbt=1.12.5
+[0m22:58:24.583149 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'maximum_seed_size_mib': '1', 'empty': 'False', 'invocation_command': 'dbt run', 'debug': 'False', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/Users/sowrabhmanjappa/.dbt', 'write_json': 'True', 'log_path': '/Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/logs', 'warn_error': 'None', 'version_check': 'True', 'no_print': 'None', 'printer_width': '80', 'use_colors': 'True', 'hints_enabled': 'True', 'log_cache_events': 'False'}
+[0m22:58:25.235137 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:58:25.235423 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:58:25.235569 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:58:25.370303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd9363b0b-1ff8-476d-a80f-a4ea46133908', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f4a6fd0>]}
+[0m22:58:25.400474 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd9363b0b-1ff8-476d-a80f-a4ea46133908', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f94f240>]}
+[0m22:58:25.401084 [info ] [MainThread]: Registered adapter: snowflake=1.12.1
+[0m22:58:25.485787 [debug] [MainThread]: checksum: 77ffcdfdd87357c644876f58fa7b09a93c3b2beb13b897bb470eb360b14c183a, vars: {}, profile: ecommerce_medallion, target: dev, version: 1.12.5
+[0m22:58:25.568540 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:58:25.568743 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m22:58:25.568872 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:58:25.573953 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd9363b0b-1ff8-476d-a80f-a4ea46133908', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fd97e50>]}
+[0m22:58:25.649643 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/manifest.json
+[0m22:58:25.651892 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/semantic_manifest.json
+[0m22:58:25.662777 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/osi_document.json
+[0m22:58:25.669500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd9363b0b-1ff8-476d-a80f-a4ea46133908', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fdaf890>]}
+[0m22:58:25.669727 [info ] [MainThread]: Found 8 models, 15 data tests, 4 sources, 562 macros
+[0m22:58:25.669896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd9363b0b-1ff8-476d-a80f-a4ea46133908', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ffdf230>]}
+[0m22:58:25.671103 [info ] [MainThread]: 
+[0m22:58:25.671275 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m22:58:25.671400 [info ] [MainThread]: 
+[0m22:58:25.671641 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m22:58:25.673973 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DE_ECOMMERCE_DB'
+[0m22:58:25.674207 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DE_ECOMMERCE_DB'
+[0m22:58:25.682336 [debug] [ThreadPool]: Using snowflake connection "list_DE_ECOMMERCE_DB"
+[0m22:58:25.682700 [debug] [ThreadPool]: On list_DE_ECOMMERCE_DB: show terse schemas in database DE_ECOMMERCE_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "list_DE_ECOMMERCE_DB"} */
+[0m22:58:25.682835 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:58:25.682561 [debug] [ThreadPool]: Using snowflake connection "list_DE_ECOMMERCE_DB"
+[0m22:58:25.683000 [debug] [ThreadPool]: On list_DE_ECOMMERCE_DB: show terse schemas in database DE_ECOMMERCE_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "list_DE_ECOMMERCE_DB"} */
+[0m22:58:25.683125 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:58:26.572149 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.889 seconds
+[0m22:58:26.575316 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.892 seconds
+[0m22:58:26.577419 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DE_ECOMMERCE_DB, now create_DE_ECOMMERCE_DB_SILVER_gold)
+[0m22:58:26.578425 [debug] [ThreadPool]: Creating schema "database: "DE_ECOMMERCE_DB"
+schema: "SILVER_gold"
+"
+[0m22:58:26.583803 [debug] [ThreadPool]: Using snowflake connection "create_DE_ECOMMERCE_DB_SILVER_gold"
+[0m22:58:26.577874 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DE_ECOMMERCE_DB, now create_DE_ECOMMERCE_DB_SILVER_silver)
+[0m22:58:26.585061 [debug] [ThreadPool]: Creating schema "database: "DE_ECOMMERCE_DB"
+schema: "SILVER_silver"
+"
+[0m22:58:26.586550 [debug] [ThreadPool]: Using snowflake connection "create_DE_ECOMMERCE_DB_SILVER_silver"
+[0m22:58:26.584423 [debug] [ThreadPool]: On create_DE_ECOMMERCE_DB_SILVER_gold: create schema if not exists DE_ECOMMERCE_DB.SILVER_gold
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "create_DE_ECOMMERCE_DB_SILVER_gold"} */
+[0m22:58:26.586826 [debug] [ThreadPool]: On create_DE_ECOMMERCE_DB_SILVER_silver: create schema if not exists DE_ECOMMERCE_DB.SILVER_silver
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "create_DE_ECOMMERCE_DB_SILVER_silver"} */
+[0m22:58:26.719495 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.132 seconds
+[0m22:58:26.750237 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.162 seconds
+[0m22:58:26.755046 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_DE_ECOMMERCE_DB_SILVER_gold, now list_DE_ECOMMERCE_DB_SILVER_gold)
+[0m22:58:26.761802 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_DE_ECOMMERCE_DB_SILVER_silver, now list_DE_ECOMMERCE_DB_SILVER_silver)
+[0m22:58:26.775473 [debug] [ThreadPool]: Using snowflake connection "list_DE_ECOMMERCE_DB_SILVER_silver"
+[0m22:58:26.776330 [debug] [ThreadPool]: On list_DE_ECOMMERCE_DB_SILVER_silver: show objects in DE_ECOMMERCE_DB.SILVER_silver
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "list_DE_ECOMMERCE_DB_SILVER_silver"} */;
+[0m22:58:26.775988 [debug] [ThreadPool]: Using snowflake connection "list_DE_ECOMMERCE_DB_SILVER_gold"
+[0m22:58:26.777040 [debug] [ThreadPool]: On list_DE_ECOMMERCE_DB_SILVER_gold: show objects in DE_ECOMMERCE_DB.SILVER_gold
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "list_DE_ECOMMERCE_DB_SILVER_gold"} */;
+[0m22:58:26.901625 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.125 seconds
+[0m22:58:26.911898 [debug] [ThreadPool]: Using snowflake connection "list_DE_ECOMMERCE_DB_SILVER_silver"
+[0m22:58:26.912399 [debug] [ThreadPool]: On list_DE_ECOMMERCE_DB_SILVER_silver: show user functions in DE_ECOMMERCE_DB.SILVER_silver
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "list_DE_ECOMMERCE_DB_SILVER_silver"} */
+[0m22:58:26.914743 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.137 seconds
+[0m22:58:26.918745 [debug] [ThreadPool]: Using snowflake connection "list_DE_ECOMMERCE_DB_SILVER_gold"
+[0m22:58:26.919318 [debug] [ThreadPool]: On list_DE_ECOMMERCE_DB_SILVER_gold: show user functions in DE_ECOMMERCE_DB.SILVER_gold
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "list_DE_ECOMMERCE_DB_SILVER_gold"} */
+[0m22:58:27.025098 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.105 seconds
+[0m22:58:27.026409 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.113 seconds
+[0m22:58:27.030574 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd9363b0b-1ff8-476d-a80f-a4ea46133908', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1101e5cc0>]}
+[0m22:58:27.036005 [debug] [Thread-4 (]: Began running node model.ecommerce_medallion.stg_orders
+[0m22:58:27.036548 [debug] [Thread-5 (]: Began running node model.ecommerce_medallion.stg_products
+[0m22:58:27.037009 [debug] [Thread-2 (]: Began running node model.ecommerce_medallion.stg_customers
+[0m22:58:27.037415 [debug] [Thread-3 (]: Began running node model.ecommerce_medallion.stg_order_items
+[0m22:58:27.038050 [info ] [Thread-4 (]: 3 of 8 START sql view model SILVER_silver.stg_orders ........................... [RUN]
+[0m22:58:27.038767 [info ] [Thread-5 (]: 4 of 8 START sql view model SILVER_silver.stg_products ......................... [RUN]
+[0m22:58:27.039448 [info ] [Thread-2 (]: 1 of 8 START sql view model SILVER_silver.stg_customers ........................ [RUN]
+[0m22:58:27.040098 [info ] [Thread-3 (]: 2 of 8 START sql view model SILVER_silver.stg_order_items ...................... [RUN]
+[0m22:58:27.040795 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.ecommerce_medallion.stg_orders'
+[0m22:58:27.042609 [debug] [Thread-4 (]: Began compiling node model.ecommerce_medallion.stg_orders
+[0m22:58:27.041861 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_DE_ECOMMERCE_DB_SILVER_gold, now model.ecommerce_medallion.stg_customers)
+[0m22:58:27.042233 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_DE_ECOMMERCE_DB_SILVER_silver, now model.ecommerce_medallion.stg_order_items)
+[0m22:58:27.041386 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.ecommerce_medallion.stg_products'
+[0m22:58:27.050503 [debug] [Thread-5 (]: Began compiling node model.ecommerce_medallion.stg_products
+[0m22:58:27.052047 [debug] [Thread-5 (]: Writing injected SQL for node "model.ecommerce_medallion.stg_products"
+[0m22:58:27.050236 [debug] [Thread-3 (]: Began compiling node model.ecommerce_medallion.stg_order_items
+[0m22:58:27.049641 [debug] [Thread-4 (]: Writing injected SQL for node "model.ecommerce_medallion.stg_orders"
+[0m22:58:27.049957 [debug] [Thread-2 (]: Began compiling node model.ecommerce_medallion.stg_customers
+[0m22:58:27.055449 [debug] [Thread-2 (]: Writing injected SQL for node "model.ecommerce_medallion.stg_customers"
+[0m22:58:27.053620 [debug] [Thread-3 (]: Writing injected SQL for node "model.ecommerce_medallion.stg_order_items"
+[0m22:58:27.056518 [debug] [Thread-4 (]: Began executing node model.ecommerce_medallion.stg_orders
+[0m22:58:27.078080 [debug] [Thread-4 (]: Writing runtime sql for node "model.ecommerce_medallion.stg_orders"
+[0m22:58:27.078363 [debug] [Thread-5 (]: Began executing node model.ecommerce_medallion.stg_products
+[0m22:58:27.080046 [debug] [Thread-5 (]: Writing runtime sql for node "model.ecommerce_medallion.stg_products"
+[0m22:58:27.078851 [debug] [Thread-2 (]: Began executing node model.ecommerce_medallion.stg_customers
+[0m22:58:27.078637 [debug] [Thread-3 (]: Began executing node model.ecommerce_medallion.stg_order_items
+[0m22:58:27.082403 [debug] [Thread-3 (]: Writing runtime sql for node "model.ecommerce_medallion.stg_order_items"
+[0m22:58:27.081259 [debug] [Thread-2 (]: Writing runtime sql for node "model.ecommerce_medallion.stg_customers"
+[0m22:58:27.083072 [debug] [Thread-5 (]: Using snowflake connection "model.ecommerce_medallion.stg_products"
+[0m22:58:27.083325 [debug] [Thread-5 (]: On model.ecommerce_medallion.stg_products: create or replace   view DE_ECOMMERCE_DB.SILVER_silver.stg_products
+  
+  
+  
+  
+  as (
+    select
+    product_id,
+    trim(product_name) as product_name,
+    trim(category) as category,
+    unit_price
+from DE_ECOMMERCE_DB.BRONZE.products
+  )
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "model.ecommerce_medallion.stg_products"} */;
+[0m22:58:27.083541 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m22:58:27.084040 [debug] [Thread-2 (]: Using snowflake connection "model.ecommerce_medallion.stg_customers"
+[0m22:58:27.086877 [debug] [Thread-2 (]: On model.ecommerce_medallion.stg_customers: create or replace   view DE_ECOMMERCE_DB.SILVER_silver.stg_customers
+  
+  
+  
+  
+  as (
+    select
+    customer_id,
+    trim(first_name) as first_name,
+    trim(last_name) as last_name,
+    lower(trim(email)) as email,
+    signup_date,
+    trim(city) as city,
+    trim(country) as country
+from DE_ECOMMERCE_DB.BRONZE.customers
+  )
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "model.ecommerce_medallion.stg_customers"} */;
+[0m22:58:27.084741 [debug] [Thread-3 (]: Using snowflake connection "model.ecommerce_medallion.stg_order_items"
+[0m22:58:27.084384 [debug] [Thread-4 (]: Using snowflake connection "model.ecommerce_medallion.stg_orders"
+[0m22:58:27.087560 [debug] [Thread-4 (]: On model.ecommerce_medallion.stg_orders: create or replace   view DE_ECOMMERCE_DB.SILVER_silver.stg_orders
+  
+  
+  
+  
+  as (
+    select
+    order_id,
+    customer_id,
+    order_date,
+    lower(trim(status)) as status
+from DE_ECOMMERCE_DB.BRONZE.orders
+  )
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "model.ecommerce_medallion.stg_orders"} */;
+[0m22:58:27.087743 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m22:58:27.087309 [debug] [Thread-3 (]: On model.ecommerce_medallion.stg_order_items: create or replace   view DE_ECOMMERCE_DB.SILVER_silver.stg_order_items
+  
+  
+  
+  
+  as (
+    select
+    order_item_id,
+    order_id,
+    product_id,
+    quantity,
+    unit_price,
+    quantity * unit_price as line_amount
+from DE_ECOMMERCE_DB.BRONZE.order_items
+  )
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "model.ecommerce_medallion.stg_order_items"} */;
+[0m22:58:27.516115 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.429 seconds
+[0m22:58:27.552502 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.464 seconds
+[0m22:58:27.555646 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd9363b0b-1ff8-476d-a80f-a4ea46133908', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11022a510>]}
+[0m22:58:27.557222 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd9363b0b-1ff8-476d-a80f-a4ea46133908', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10923d020>]}
+[0m22:58:27.557859 [info ] [Thread-3 (]: 2 of 8 OK created sql view model SILVER_silver.stg_order_items ................. [[32mSUCCESS 1[0m in 0.51s]
+[0m22:58:27.558506 [debug] [Thread-3 (]: Finished running node model.ecommerce_medallion.stg_order_items
+[0m22:58:27.556554 [info ] [Thread-2 (]: 1 of 8 OK created sql view model SILVER_silver.stg_customers ................... [[32mSUCCESS 1[0m in 0.51s]
+[0m22:58:27.559429 [debug] [Thread-2 (]: Finished running node model.ecommerce_medallion.stg_customers
+[0m22:58:27.559806 [debug] [Thread-3 (]: Began running node model.ecommerce_medallion.dim_customers
+[0m22:58:27.560132 [info ] [Thread-3 (]: 5 of 8 START sql table model SILVER_gold.dim_customers ......................... [RUN]
+[0m22:58:27.560448 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.ecommerce_medallion.stg_order_items, now model.ecommerce_medallion.dim_customers)
+[0m22:58:27.560683 [debug] [Thread-3 (]: Began compiling node model.ecommerce_medallion.dim_customers
+[0m22:58:27.562004 [debug] [Thread-3 (]: Writing injected SQL for node "model.ecommerce_medallion.dim_customers"
+[0m22:58:27.562559 [debug] [Thread-3 (]: Began executing node model.ecommerce_medallion.dim_customers
+[0m22:58:27.580628 [debug] [Thread-3 (]: Writing runtime sql for node "model.ecommerce_medallion.dim_customers"
+[0m22:58:27.581287 [debug] [Thread-3 (]: Using snowflake connection "model.ecommerce_medallion.dim_customers"
+[0m22:58:27.581490 [debug] [Thread-3 (]: On model.ecommerce_medallion.dim_customers: create or replace transient table DE_ECOMMERCE_DB.SILVER_gold.dim_customers
+    
+    
+    
+    
+    
+
+    as (select * from DE_ECOMMERCE_DB.SILVER_silver.stg_customers
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "model.ecommerce_medallion.dim_customers"} */;
+[0m22:58:27.794543 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.707 seconds
+[0m22:58:27.799004 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd9363b0b-1ff8-476d-a80f-a4ea46133908', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100c3cf0>]}
+[0m22:58:27.800435 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.717 seconds
+[0m22:58:27.804121 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd9363b0b-1ff8-476d-a80f-a4ea46133908', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fa44fd0>]}
+[0m22:58:27.801256 [info ] [Thread-4 (]: 3 of 8 OK created sql view model SILVER_silver.stg_orders ...................... [[32mSUCCESS 1[0m in 0.76s]
+[0m22:58:27.805506 [debug] [Thread-4 (]: Finished running node model.ecommerce_medallion.stg_orders
+[0m22:58:27.804824 [info ] [Thread-5 (]: 4 of 8 OK created sql view model SILVER_silver.stg_products .................... [[32mSUCCESS 1[0m in 0.76s]
+[0m22:58:27.806157 [debug] [Thread-5 (]: Finished running node model.ecommerce_medallion.stg_products
+[0m22:58:27.806810 [debug] [Thread-2 (]: Began running node model.ecommerce_medallion.dim_products
+[0m22:58:27.807615 [info ] [Thread-2 (]: 6 of 8 START sql table model SILVER_gold.dim_products .......................... [RUN]
+[0m22:58:27.808047 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ecommerce_medallion.stg_customers, now model.ecommerce_medallion.dim_products)
+[0m22:58:27.808389 [debug] [Thread-2 (]: Began compiling node model.ecommerce_medallion.dim_products
+[0m22:58:27.807194 [debug] [Thread-4 (]: Began running node model.ecommerce_medallion.fct_order_items
+[0m22:58:27.810806 [info ] [Thread-4 (]: 7 of 8 START sql table model SILVER_gold.fct_order_items ....................... [RUN]
+[0m22:58:27.811224 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.ecommerce_medallion.stg_orders, now model.ecommerce_medallion.fct_order_items)
+[0m22:58:27.811574 [debug] [Thread-4 (]: Began compiling node model.ecommerce_medallion.fct_order_items
+[0m22:58:27.810335 [debug] [Thread-2 (]: Writing injected SQL for node "model.ecommerce_medallion.dim_products"
+[0m22:58:27.813372 [debug] [Thread-4 (]: Writing injected SQL for node "model.ecommerce_medallion.fct_order_items"
+[0m22:58:27.814115 [debug] [Thread-2 (]: Began executing node model.ecommerce_medallion.dim_products
+[0m22:58:27.816195 [debug] [Thread-2 (]: Writing runtime sql for node "model.ecommerce_medallion.dim_products"
+[0m22:58:27.814408 [debug] [Thread-4 (]: Began executing node model.ecommerce_medallion.fct_order_items
+[0m22:58:27.817856 [debug] [Thread-4 (]: Writing runtime sql for node "model.ecommerce_medallion.fct_order_items"
+[0m22:58:27.818508 [debug] [Thread-2 (]: Using snowflake connection "model.ecommerce_medallion.dim_products"
+[0m22:58:27.818843 [debug] [Thread-2 (]: On model.ecommerce_medallion.dim_products: create or replace transient table DE_ECOMMERCE_DB.SILVER_gold.dim_products
+    
+    
+    
+    
+    
+
+    as (select * from DE_ECOMMERCE_DB.SILVER_silver.stg_products
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "model.ecommerce_medallion.dim_products"} */;
+[0m22:58:27.819606 [debug] [Thread-4 (]: Using snowflake connection "model.ecommerce_medallion.fct_order_items"
+[0m22:58:27.820117 [debug] [Thread-4 (]: On model.ecommerce_medallion.fct_order_items: create or replace transient table DE_ECOMMERCE_DB.SILVER_gold.fct_order_items
+    
+    
+    
+    
+    
+
+    as (select
+    oi.order_item_id,
+    oi.order_id,
+    o.customer_id,
+    oi.product_id,
+    o.order_date,
+    o.status,
+    oi.quantity,
+    oi.unit_price,
+    oi.line_amount
+from DE_ECOMMERCE_DB.SILVER_silver.stg_order_items oi
+join DE_ECOMMERCE_DB.SILVER_silver.stg_orders o on oi.order_id = o.order_id
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "model.ecommerce_medallion.fct_order_items"} */;
+[0m22:58:28.627476 [debug] [Thread-2 (]: SQL status: SUCCESS 30 in 0.808 seconds
+[0m22:58:28.631119 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd9363b0b-1ff8-476d-a80f-a4ea46133908', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100402f0>]}
+[0m22:58:28.632055 [info ] [Thread-2 (]: 6 of 8 OK created sql table model SILVER_gold.dim_products ..................... [[32mSUCCESS 30[0m in 0.82s]
+[0m22:58:28.632864 [debug] [Thread-2 (]: Finished running node model.ecommerce_medallion.dim_products
+[0m22:58:28.707747 [debug] [Thread-3 (]: SQL status: SUCCESS 100 in 1.126 seconds
+[0m22:58:28.711962 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd9363b0b-1ff8-476d-a80f-a4ea46133908', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1101efef0>]}
+[0m22:58:28.713034 [info ] [Thread-3 (]: 5 of 8 OK created sql table model SILVER_gold.dim_customers .................... [[32mSUCCESS 100[0m in 1.15s]
+[0m22:58:28.713889 [debug] [Thread-3 (]: Finished running node model.ecommerce_medallion.dim_customers
+[0m22:58:28.862257 [debug] [Thread-4 (]: SQL status: SUCCESS 1956 in 1.041 seconds
+[0m22:58:28.868619 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd9363b0b-1ff8-476d-a80f-a4ea46133908', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1102c19d0>]}
+[0m22:58:28.869599 [info ] [Thread-4 (]: 7 of 8 OK created sql table model SILVER_gold.fct_order_items .................. [[32mSUCCESS 1956[0m in 1.06s]
+[0m22:58:28.870348 [debug] [Thread-4 (]: Finished running node model.ecommerce_medallion.fct_order_items
+[0m22:58:28.871471 [debug] [Thread-5 (]: Began running node model.ecommerce_medallion.mart_daily_revenue
+[0m22:58:28.872209 [info ] [Thread-5 (]: 8 of 8 START sql table model SILVER_gold.mart_daily_revenue .................... [RUN]
+[0m22:58:28.872807 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly model.ecommerce_medallion.stg_products, now model.ecommerce_medallion.mart_daily_revenue)
+[0m22:58:28.873169 [debug] [Thread-5 (]: Began compiling node model.ecommerce_medallion.mart_daily_revenue
+[0m22:58:28.876755 [debug] [Thread-5 (]: Writing injected SQL for node "model.ecommerce_medallion.mart_daily_revenue"
+[0m22:58:28.877773 [debug] [Thread-5 (]: Began executing node model.ecommerce_medallion.mart_daily_revenue
+[0m22:58:28.879817 [debug] [Thread-5 (]: Writing runtime sql for node "model.ecommerce_medallion.mart_daily_revenue"
+[0m22:58:28.880875 [debug] [Thread-5 (]: Using snowflake connection "model.ecommerce_medallion.mart_daily_revenue"
+[0m22:58:28.881211 [debug] [Thread-5 (]: On model.ecommerce_medallion.mart_daily_revenue: create or replace transient table DE_ECOMMERCE_DB.SILVER_gold.mart_daily_revenue
+    
+    
+    
+    
+    
+
+    as (select
+    order_date,
+    count(distinct order_id) as order_count,
+    sum(line_amount) as total_revenue
+from DE_ECOMMERCE_DB.SILVER_gold.fct_order_items
+where status != 'cancelled'
+group by order_date
+order by order_date
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "model.ecommerce_medallion.mart_daily_revenue"} */;
+[0m22:58:29.485081 [debug] [Thread-5 (]: SQL status: SUCCESS 30 in 0.603 seconds
+[0m22:58:29.488334 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd9363b0b-1ff8-476d-a80f-a4ea46133908', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1101ef3b0>]}
+[0m22:58:29.489193 [info ] [Thread-5 (]: 8 of 8 OK created sql table model SILVER_gold.mart_daily_revenue ............... [[32mSUCCESS 30[0m in 0.62s]
+[0m22:58:29.490098 [debug] [Thread-5 (]: Finished running node model.ecommerce_medallion.mart_daily_revenue
+[0m22:58:29.491980 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:58:29.492456 [debug] [MainThread]: Connection 'model.ecommerce_medallion.dim_products' was left open.
+[0m22:58:29.492846 [debug] [MainThread]: On model.ecommerce_medallion.dim_products: Close
+[0m22:58:29.629859 [debug] [MainThread]: Connection 'model.ecommerce_medallion.dim_customers' was left open.
+[0m22:58:29.630766 [debug] [MainThread]: On model.ecommerce_medallion.dim_customers: Close
+[0m22:58:29.766992 [debug] [MainThread]: Connection 'model.ecommerce_medallion.fct_order_items' was left open.
+[0m22:58:29.767663 [debug] [MainThread]: On model.ecommerce_medallion.fct_order_items: Close
+[0m22:58:29.898296 [debug] [MainThread]: Connection 'model.ecommerce_medallion.mart_daily_revenue' was left open.
+[0m22:58:29.899021 [debug] [MainThread]: On model.ecommerce_medallion.mart_daily_revenue: Close
+[0m22:58:30.031817 [info ] [MainThread]: 
+[0m22:58:30.032399 [info ] [MainThread]: Finished running 4 table models, 4 view models in 0 hours 0 minutes and 4.36 seconds (4.36s).
+[0m22:58:30.034438 [debug] [MainThread]: Command end result
+[0m22:58:30.072732 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/manifest.json
+[0m22:58:30.074901 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/semantic_manifest.json
+[0m22:58:30.076714 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/osi_document.json
+[0m22:58:30.081407 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/run_results.json
+[0m22:58:30.081591 [info ] [MainThread]: 
+[0m22:58:30.081828 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:58:30.082037 [info ] [MainThread]: 
+[0m22:58:30.082224 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=8
+[0m22:58:30.086368 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.583164, "process_in_blocks": "0", "process_kernel_time": 0.327939, "process_mem_max_rss": "241975296", "process_out_blocks": "0", "process_user_time": 2.429287}
+[0m22:58:30.086785 [debug] [MainThread]: Command `dbt run` succeeded at 22:58:30.086731 after 5.58 seconds
+[0m22:58:30.087033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6afb30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1101ef290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1101edc70>]}
+[0m22:58:30.087259 [debug] [MainThread]: Flushing usage events
+[0m22:58:30.126677 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:58:39.465411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10acae120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c4be710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c4be990>]}
+
+
+============================== 22:58:39.468241 | 71ad1f45-42a9-4106-b7f6-7190aa07d1b6 ==============================
+[0m22:58:39.468241 [info ] [MainThread]: Running with dbt=1.12.5
+[0m22:58:39.468544 [debug] [MainThread]: running dbt with arguments {'log_path': '/Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/logs', 'hints_enabled': 'True', 'fail_fast': 'False', 'log_cache_events': 'False', 'debug': 'False', 'use_experimental_parser': 'False', 'empty': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'static_parser': 'True', 'quiet': 'False', 'target_path': 'None', 'log_format': 'default', 'introspect': 'True', 'version_check': 'True', 'use_colors': 'True', 'no_print': 'None', 'indirect_selection': 'eager', 'write_json': 'True', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'profiles_dir': '/Users/sowrabhmanjappa/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'invocation_command': 'dbt test'}
+[0m22:58:39.901460 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:58:39.901738 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:58:39.901890 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:58:40.019932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '71ad1f45-42a9-4106-b7f6-7190aa07d1b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111242fd0>]}
+[0m22:58:40.050473 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '71ad1f45-42a9-4106-b7f6-7190aa07d1b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1116eb240>]}
+[0m22:58:40.051889 [info ] [MainThread]: Registered adapter: snowflake=1.12.1
+[0m22:58:40.131595 [debug] [MainThread]: checksum: 77ffcdfdd87357c644876f58fa7b09a93c3b2beb13b897bb470eb360b14c183a, vars: {}, profile: ecommerce_medallion, target: dev, version: 1.12.5
+[0m22:58:40.211666 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:58:40.211878 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m22:58:40.212006 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:58:40.217044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '71ad1f45-42a9-4106-b7f6-7190aa07d1b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111b33e50>]}
+[0m22:58:40.291948 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/manifest.json
+[0m22:58:40.293930 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/semantic_manifest.json
+[0m22:58:40.304343 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/osi_document.json
+[0m22:58:40.315308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '71ad1f45-42a9-4106-b7f6-7190aa07d1b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111b458b0>]}
+[0m22:58:40.315528 [info ] [MainThread]: Found 8 models, 15 data tests, 4 sources, 562 macros
+[0m22:58:40.315696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '71ad1f45-42a9-4106-b7f6-7190aa07d1b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111df74d0>]}
+[0m22:58:40.317034 [info ] [MainThread]: 
+[0m22:58:40.317206 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m22:58:40.317338 [info ] [MainThread]: 
+[0m22:58:40.317590 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m22:58:40.320026 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DE_ECOMMERCE_DB_SILVER_silver'
+[0m22:58:40.320273 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DE_ECOMMERCE_DB_SILVER_gold'
+[0m22:58:40.331409 [debug] [ThreadPool]: Using snowflake connection "list_DE_ECOMMERCE_DB_SILVER_silver"
+[0m22:58:40.331782 [debug] [ThreadPool]: On list_DE_ECOMMERCE_DB_SILVER_silver: show objects in DE_ECOMMERCE_DB.SILVER_silver
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "list_DE_ECOMMERCE_DB_SILVER_silver"} */;
+[0m22:58:40.331917 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:58:40.331630 [debug] [ThreadPool]: Using snowflake connection "list_DE_ECOMMERCE_DB_SILVER_gold"
+[0m22:58:40.332084 [debug] [ThreadPool]: On list_DE_ECOMMERCE_DB_SILVER_gold: show objects in DE_ECOMMERCE_DB.SILVER_gold
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "list_DE_ECOMMERCE_DB_SILVER_gold"} */;
+[0m22:58:40.332219 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:58:41.157661 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.825 seconds
+[0m22:58:41.169606 [debug] [ThreadPool]: Using snowflake connection "list_DE_ECOMMERCE_DB_SILVER_gold"
+[0m22:58:41.170182 [debug] [ThreadPool]: On list_DE_ECOMMERCE_DB_SILVER_gold: show user functions in DE_ECOMMERCE_DB.SILVER_gold
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "list_DE_ECOMMERCE_DB_SILVER_gold"} */
+[0m22:58:41.194504 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.862 seconds
+[0m22:58:41.197836 [debug] [ThreadPool]: Using snowflake connection "list_DE_ECOMMERCE_DB_SILVER_silver"
+[0m22:58:41.198258 [debug] [ThreadPool]: On list_DE_ECOMMERCE_DB_SILVER_silver: show user functions in DE_ECOMMERCE_DB.SILVER_silver
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "list_DE_ECOMMERCE_DB_SILVER_silver"} */
+[0m22:58:41.272335 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.102 seconds
+[0m22:58:41.288731 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.090 seconds
+[0m22:58:41.292486 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '71ad1f45-42a9-4106-b7f6-7190aa07d1b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111c564e0>]}
+[0m22:58:41.298596 [debug] [Thread-4 (]: Began running node test.ecommerce_medallion.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m22:58:41.299287 [debug] [Thread-3 (]: Began running node test.ecommerce_medallion.not_null_mart_daily_revenue_order_date.afa9807e23
+[0m22:58:41.301082 [info ] [Thread-3 (]: 2 of 15 START test not_null_mart_daily_revenue_order_date ...................... [RUN]
+[0m22:58:41.300125 [debug] [Thread-5 (]: Began running node test.ecommerce_medallion.not_null_stg_order_items_order_item_id.26a7e2bc35
+[0m22:58:41.300582 [info ] [Thread-4 (]: 3 of 15 START test not_null_stg_customers_customer_id .......................... [RUN]
+[0m22:58:41.299722 [debug] [Thread-2 (]: Began running node test.ecommerce_medallion.not_null_fct_order_items_order_item_id.dbaab21f55
+[0m22:58:41.301663 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_DE_ECOMMERCE_DB_SILVER_gold, now test.ecommerce_medallion.not_null_mart_daily_revenue_order_date.afa9807e23)
+[0m22:58:41.302092 [info ] [Thread-5 (]: 4 of 15 START test not_null_stg_order_items_order_item_id ...................... [RUN]
+[0m22:58:41.304058 [debug] [Thread-5 (]: Acquiring new snowflake connection 'test.ecommerce_medallion.not_null_stg_order_items_order_item_id.26a7e2bc35'
+[0m22:58:41.304447 [debug] [Thread-5 (]: Began compiling node test.ecommerce_medallion.not_null_stg_order_items_order_item_id.26a7e2bc35
+[0m22:58:41.303121 [info ] [Thread-2 (]: 1 of 15 START test not_null_fct_order_items_order_item_id ...................... [RUN]
+[0m22:58:41.302689 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.ecommerce_medallion.not_null_stg_customers_customer_id.e2cfb1f9aa'
+[0m22:58:41.303541 [debug] [Thread-3 (]: Began compiling node test.ecommerce_medallion.not_null_mart_daily_revenue_order_date.afa9807e23
+[0m22:58:41.317662 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_DE_ECOMMERCE_DB_SILVER_silver, now test.ecommerce_medallion.not_null_fct_order_items_order_item_id.dbaab21f55)
+[0m22:58:41.324039 [debug] [Thread-5 (]: Writing injected SQL for node "test.ecommerce_medallion.not_null_stg_order_items_order_item_id.26a7e2bc35"
+[0m22:58:41.324402 [debug] [Thread-4 (]: Began compiling node test.ecommerce_medallion.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m22:58:41.334011 [debug] [Thread-4 (]: Writing injected SQL for node "test.ecommerce_medallion.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m22:58:41.329472 [debug] [Thread-2 (]: Began compiling node test.ecommerce_medallion.not_null_fct_order_items_order_item_id.dbaab21f55
+[0m22:58:41.329201 [debug] [Thread-3 (]: Writing injected SQL for node "test.ecommerce_medallion.not_null_mart_daily_revenue_order_date.afa9807e23"
+[0m22:58:41.341247 [debug] [Thread-2 (]: Writing injected SQL for node "test.ecommerce_medallion.not_null_fct_order_items_order_item_id.dbaab21f55"
+[0m22:58:41.341663 [debug] [Thread-4 (]: Began executing node test.ecommerce_medallion.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m22:58:41.341884 [debug] [Thread-5 (]: Began executing node test.ecommerce_medallion.not_null_stg_order_items_order_item_id.26a7e2bc35
+[0m22:58:41.357800 [debug] [Thread-5 (]: Writing runtime sql for node "test.ecommerce_medallion.not_null_stg_order_items_order_item_id.26a7e2bc35"
+[0m22:58:41.358073 [debug] [Thread-2 (]: Began executing node test.ecommerce_medallion.not_null_fct_order_items_order_item_id.dbaab21f55
+[0m22:58:41.359061 [debug] [Thread-2 (]: Writing runtime sql for node "test.ecommerce_medallion.not_null_fct_order_items_order_item_id.dbaab21f55"
+[0m22:58:41.363535 [debug] [Thread-4 (]: Writing runtime sql for node "test.ecommerce_medallion.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m22:58:41.363722 [debug] [Thread-3 (]: Began executing node test.ecommerce_medallion.not_null_mart_daily_revenue_order_date.afa9807e23
+[0m22:58:41.364699 [debug] [Thread-3 (]: Writing runtime sql for node "test.ecommerce_medallion.not_null_mart_daily_revenue_order_date.afa9807e23"
+[0m22:58:41.365139 [debug] [Thread-4 (]: Using snowflake connection "test.ecommerce_medallion.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m22:58:41.365376 [debug] [Thread-4 (]: On test.ecommerce_medallion.not_null_stg_customers_customer_id.e2cfb1f9aa: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from DE_ECOMMERCE_DB.SILVER_silver.stg_customers
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.not_null_stg_customers_customer_id.e2cfb1f9aa"} */
+[0m22:58:41.365912 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m22:58:41.366806 [debug] [Thread-2 (]: Using snowflake connection "test.ecommerce_medallion.not_null_fct_order_items_order_item_id.dbaab21f55"
+[0m22:58:41.365746 [debug] [Thread-5 (]: Using snowflake connection "test.ecommerce_medallion.not_null_stg_order_items_order_item_id.26a7e2bc35"
+[0m22:58:41.367201 [debug] [Thread-5 (]: On test.ecommerce_medallion.not_null_stg_order_items_order_item_id.26a7e2bc35: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_item_id
+from DE_ECOMMERCE_DB.SILVER_silver.stg_order_items
+where order_item_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.not_null_stg_order_items_order_item_id.26a7e2bc35"} */
+[0m22:58:41.367383 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m22:58:41.366447 [debug] [Thread-3 (]: Using snowflake connection "test.ecommerce_medallion.not_null_mart_daily_revenue_order_date.afa9807e23"
+[0m22:58:41.367589 [debug] [Thread-3 (]: On test.ecommerce_medallion.not_null_mart_daily_revenue_order_date.afa9807e23: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_date
+from DE_ECOMMERCE_DB.SILVER_gold.mart_daily_revenue
+where order_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.not_null_mart_daily_revenue_order_date.afa9807e23"} */
+[0m22:58:41.366993 [debug] [Thread-2 (]: On test.ecommerce_medallion.not_null_fct_order_items_order_item_id.dbaab21f55: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_item_id
+from DE_ECOMMERCE_DB.SILVER_gold.fct_order_items
+where order_item_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.not_null_fct_order_items_order_item_id.dbaab21f55"} */
+[0m22:58:41.644903 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.277 seconds
+[0m22:58:41.652007 [info ] [Thread-2 (]: 1 of 15 PASS not_null_fct_order_items_order_item_id ............................ [[32mPASS[0m in 0.33s]
+[0m22:58:41.652390 [debug] [Thread-2 (]: Finished running node test.ecommerce_medallion.not_null_fct_order_items_order_item_id.dbaab21f55
+[0m22:58:41.652601 [debug] [Thread-2 (]: Began running node test.ecommerce_medallion.not_null_stg_orders_order_id.81cfe2fe64
+[0m22:58:41.652815 [info ] [Thread-2 (]: 5 of 15 START test not_null_stg_orders_order_id ................................ [RUN]
+[0m22:58:41.653063 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.ecommerce_medallion.not_null_fct_order_items_order_item_id.dbaab21f55, now test.ecommerce_medallion.not_null_stg_orders_order_id.81cfe2fe64)
+[0m22:58:41.653274 [debug] [Thread-2 (]: Began compiling node test.ecommerce_medallion.not_null_stg_orders_order_id.81cfe2fe64
+[0m22:58:41.657842 [debug] [Thread-2 (]: Writing injected SQL for node "test.ecommerce_medallion.not_null_stg_orders_order_id.81cfe2fe64"
+[0m22:58:41.660296 [debug] [Thread-2 (]: Began executing node test.ecommerce_medallion.not_null_stg_orders_order_id.81cfe2fe64
+[0m22:58:41.661238 [debug] [Thread-2 (]: Writing runtime sql for node "test.ecommerce_medallion.not_null_stg_orders_order_id.81cfe2fe64"
+[0m22:58:41.661899 [debug] [Thread-2 (]: Using snowflake connection "test.ecommerce_medallion.not_null_stg_orders_order_id.81cfe2fe64"
+[0m22:58:41.662078 [debug] [Thread-2 (]: On test.ecommerce_medallion.not_null_stg_orders_order_id.81cfe2fe64: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_id
+from DE_ECOMMERCE_DB.SILVER_silver.stg_orders
+where order_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.not_null_stg_orders_order_id.81cfe2fe64"} */
+[0m22:58:41.728710 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.361 seconds
+[0m22:58:41.730119 [info ] [Thread-3 (]: 2 of 15 PASS not_null_mart_daily_revenue_order_date ............................ [[32mPASS[0m in 0.43s]
+[0m22:58:41.730506 [debug] [Thread-3 (]: Finished running node test.ecommerce_medallion.not_null_mart_daily_revenue_order_date.afa9807e23
+[0m22:58:41.730753 [debug] [Thread-3 (]: Began running node test.ecommerce_medallion.not_null_stg_products_product_id.6373b0acf3
+[0m22:58:41.731029 [info ] [Thread-3 (]: 6 of 15 START test not_null_stg_products_product_id ............................ [RUN]
+[0m22:58:41.731341 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.ecommerce_medallion.not_null_mart_daily_revenue_order_date.afa9807e23, now test.ecommerce_medallion.not_null_stg_products_product_id.6373b0acf3)
+[0m22:58:41.731572 [debug] [Thread-3 (]: Began compiling node test.ecommerce_medallion.not_null_stg_products_product_id.6373b0acf3
+[0m22:58:41.736278 [debug] [Thread-3 (]: Writing injected SQL for node "test.ecommerce_medallion.not_null_stg_products_product_id.6373b0acf3"
+[0m22:58:41.736767 [debug] [Thread-3 (]: Began executing node test.ecommerce_medallion.not_null_stg_products_product_id.6373b0acf3
+[0m22:58:41.737854 [debug] [Thread-3 (]: Writing runtime sql for node "test.ecommerce_medallion.not_null_stg_products_product_id.6373b0acf3"
+[0m22:58:41.738425 [debug] [Thread-3 (]: Using snowflake connection "test.ecommerce_medallion.not_null_stg_products_product_id.6373b0acf3"
+[0m22:58:41.738648 [debug] [Thread-3 (]: On test.ecommerce_medallion.not_null_stg_products_product_id.6373b0acf3: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_id
+from DE_ECOMMERCE_DB.SILVER_silver.stg_products
+where product_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.not_null_stg_products_product_id.6373b0acf3"} */
+[0m22:58:41.867974 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.206 seconds
+[0m22:58:41.871199 [info ] [Thread-2 (]: 5 of 15 PASS not_null_stg_orders_order_id ...................................... [[32mPASS[0m in 0.22s]
+[0m22:58:41.871959 [debug] [Thread-2 (]: Finished running node test.ecommerce_medallion.not_null_stg_orders_order_id.81cfe2fe64
+[0m22:58:41.872440 [debug] [Thread-2 (]: Began running node test.ecommerce_medallion.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m22:58:41.872947 [info ] [Thread-2 (]: 7 of 15 START test relationships_stg_order_items_order_id__order_id__ref_stg_orders_  [RUN]
+[0m22:58:41.873513 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.ecommerce_medallion.not_null_stg_orders_order_id.81cfe2fe64, now test.ecommerce_medallion.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54)
+[0m22:58:41.873969 [debug] [Thread-2 (]: Began compiling node test.ecommerce_medallion.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m22:58:41.892851 [debug] [Thread-2 (]: Writing injected SQL for node "test.ecommerce_medallion.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54"
+[0m22:58:41.893524 [debug] [Thread-2 (]: Began executing node test.ecommerce_medallion.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m22:58:41.894948 [debug] [Thread-2 (]: Writing runtime sql for node "test.ecommerce_medallion.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54"
+[0m22:58:41.895897 [debug] [Thread-2 (]: Using snowflake connection "test.ecommerce_medallion.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54"
+[0m22:58:41.896204 [debug] [Thread-2 (]: On test.ecommerce_medallion.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select order_id as from_field
+    from DE_ECOMMERCE_DB.SILVER_silver.stg_order_items
+    where order_id is not null
+),
+
+parent as (
+    select order_id as to_field
+    from DE_ECOMMERCE_DB.SILVER_silver.stg_orders
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54"} */
+[0m22:58:41.924015 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.557 seconds
+[0m22:58:41.925763 [info ] [Thread-5 (]: 4 of 15 PASS not_null_stg_order_items_order_item_id ............................ [[32mPASS[0m in 0.62s]
+[0m22:58:41.926254 [debug] [Thread-5 (]: Finished running node test.ecommerce_medallion.not_null_stg_order_items_order_item_id.26a7e2bc35
+[0m22:58:41.926587 [debug] [Thread-5 (]: Began running node test.ecommerce_medallion.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m22:58:41.926935 [info ] [Thread-5 (]: 8 of 15 START test relationships_stg_order_items_product_id__product_id__ref_stg_products_  [RUN]
+[0m22:58:41.927348 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.ecommerce_medallion.not_null_stg_order_items_order_item_id.26a7e2bc35, now test.ecommerce_medallion.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c)
+[0m22:58:41.927661 [debug] [Thread-5 (]: Began compiling node test.ecommerce_medallion.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m22:58:41.939937 [debug] [Thread-5 (]: Writing injected SQL for node "test.ecommerce_medallion.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c"
+[0m22:58:41.940510 [debug] [Thread-5 (]: Began executing node test.ecommerce_medallion.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m22:58:41.941742 [debug] [Thread-5 (]: Writing runtime sql for node "test.ecommerce_medallion.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c"
+[0m22:58:41.942615 [debug] [Thread-5 (]: Using snowflake connection "test.ecommerce_medallion.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c"
+[0m22:58:41.942877 [debug] [Thread-5 (]: On test.ecommerce_medallion.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select product_id as from_field
+    from DE_ECOMMERCE_DB.SILVER_silver.stg_order_items
+    where product_id is not null
+),
+
+parent as (
+    select product_id as to_field
+    from DE_ECOMMERCE_DB.SILVER_silver.stg_products
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c"} */
+[0m22:58:41.951040 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.212 seconds
+[0m22:58:41.952439 [info ] [Thread-3 (]: 6 of 15 PASS not_null_stg_products_product_id .................................. [[32mPASS[0m in 0.22s]
+[0m22:58:41.952833 [debug] [Thread-3 (]: Finished running node test.ecommerce_medallion.not_null_stg_products_product_id.6373b0acf3
+[0m22:58:41.953067 [debug] [Thread-3 (]: Began running node test.ecommerce_medallion.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500
+[0m22:58:41.953322 [info ] [Thread-3 (]: 9 of 15 START test relationships_stg_orders_customer_id__customer_id__ref_stg_customers_  [RUN]
+[0m22:58:41.953598 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.ecommerce_medallion.not_null_stg_products_product_id.6373b0acf3, now test.ecommerce_medallion.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500)
+[0m22:58:41.953814 [debug] [Thread-3 (]: Began compiling node test.ecommerce_medallion.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500
+[0m22:58:41.963692 [debug] [Thread-3 (]: Writing injected SQL for node "test.ecommerce_medallion.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500"
+[0m22:58:41.964161 [debug] [Thread-3 (]: Began executing node test.ecommerce_medallion.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500
+[0m22:58:41.965181 [debug] [Thread-3 (]: Writing runtime sql for node "test.ecommerce_medallion.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500"
+[0m22:58:41.965860 [debug] [Thread-3 (]: Using snowflake connection "test.ecommerce_medallion.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500"
+[0m22:58:41.966071 [debug] [Thread-3 (]: On test.ecommerce_medallion.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select customer_id as from_field
+    from DE_ECOMMERCE_DB.SILVER_silver.stg_orders
+    where customer_id is not null
+),
+
+parent as (
+    select customer_id as to_field
+    from DE_ECOMMERCE_DB.SILVER_silver.stg_customers
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500"} */
+[0m22:58:42.073301 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.177 seconds
+[0m22:58:42.075670 [info ] [Thread-2 (]: 7 of 15 PASS relationships_stg_order_items_order_id__order_id__ref_stg_orders_ . [[32mPASS[0m in 0.20s]
+[0m22:58:42.076645 [debug] [Thread-2 (]: Finished running node test.ecommerce_medallion.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m22:58:42.077804 [debug] [Thread-2 (]: Began running node test.ecommerce_medallion.unique_fct_order_items_order_item_id.0dec5f6768
+[0m22:58:42.078228 [info ] [Thread-2 (]: 10 of 15 START test unique_fct_order_items_order_item_id ....................... [RUN]
+[0m22:58:42.078689 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.ecommerce_medallion.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54, now test.ecommerce_medallion.unique_fct_order_items_order_item_id.0dec5f6768)
+[0m22:58:42.079070 [debug] [Thread-2 (]: Began compiling node test.ecommerce_medallion.unique_fct_order_items_order_item_id.0dec5f6768
+[0m22:58:42.077378 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.711 seconds
+[0m22:58:42.086959 [info ] [Thread-4 (]: 3 of 15 PASS not_null_stg_customers_customer_id ................................ [[32mPASS[0m in 0.78s]
+[0m22:58:42.090677 [debug] [Thread-4 (]: Finished running node test.ecommerce_medallion.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m22:58:42.090960 [debug] [Thread-4 (]: Began running node test.ecommerce_medallion.unique_mart_daily_revenue_order_date.d69c8c5e9b
+[0m22:58:42.091236 [info ] [Thread-4 (]: 11 of 15 START test unique_mart_daily_revenue_order_date ....................... [RUN]
+[0m22:58:42.091543 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.ecommerce_medallion.not_null_stg_customers_customer_id.e2cfb1f9aa, now test.ecommerce_medallion.unique_mart_daily_revenue_order_date.d69c8c5e9b)
+[0m22:58:42.090293 [debug] [Thread-2 (]: Writing injected SQL for node "test.ecommerce_medallion.unique_fct_order_items_order_item_id.0dec5f6768"
+[0m22:58:42.091791 [debug] [Thread-4 (]: Began compiling node test.ecommerce_medallion.unique_mart_daily_revenue_order_date.d69c8c5e9b
+[0m22:58:42.096874 [debug] [Thread-4 (]: Writing injected SQL for node "test.ecommerce_medallion.unique_mart_daily_revenue_order_date.d69c8c5e9b"
+[0m22:58:42.097378 [debug] [Thread-4 (]: Began executing node test.ecommerce_medallion.unique_mart_daily_revenue_order_date.d69c8c5e9b
+[0m22:58:42.098775 [debug] [Thread-4 (]: Writing runtime sql for node "test.ecommerce_medallion.unique_mart_daily_revenue_order_date.d69c8c5e9b"
+[0m22:58:42.097605 [debug] [Thread-2 (]: Began executing node test.ecommerce_medallion.unique_fct_order_items_order_item_id.0dec5f6768
+[0m22:58:42.099972 [debug] [Thread-2 (]: Writing runtime sql for node "test.ecommerce_medallion.unique_fct_order_items_order_item_id.0dec5f6768"
+[0m22:58:42.100558 [debug] [Thread-4 (]: Using snowflake connection "test.ecommerce_medallion.unique_mart_daily_revenue_order_date.d69c8c5e9b"
+[0m22:58:42.100822 [debug] [Thread-4 (]: On test.ecommerce_medallion.unique_mart_daily_revenue_order_date.d69c8c5e9b: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    order_date as unique_field,
+    count(*) as n_records
+
+from DE_ECOMMERCE_DB.SILVER_gold.mart_daily_revenue
+where order_date is not null
+group by order_date
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.unique_mart_daily_revenue_order_date.d69c8c5e9b"} */
+[0m22:58:42.101516 [debug] [Thread-2 (]: Using snowflake connection "test.ecommerce_medallion.unique_fct_order_items_order_item_id.0dec5f6768"
+[0m22:58:42.101942 [debug] [Thread-2 (]: On test.ecommerce_medallion.unique_fct_order_items_order_item_id.0dec5f6768: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    order_item_id as unique_field,
+    count(*) as n_records
+
+from DE_ECOMMERCE_DB.SILVER_gold.fct_order_items
+where order_item_id is not null
+group by order_item_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.unique_fct_order_items_order_item_id.0dec5f6768"} */
+[0m22:58:42.127665 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.185 seconds
+[0m22:58:42.129056 [info ] [Thread-5 (]: 8 of 15 PASS relationships_stg_order_items_product_id__product_id__ref_stg_products_  [[32mPASS[0m in 0.20s]
+[0m22:58:42.129472 [debug] [Thread-5 (]: Finished running node test.ecommerce_medallion.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m22:58:42.129741 [debug] [Thread-5 (]: Began running node test.ecommerce_medallion.unique_stg_customers_customer_id.c7614daada
+[0m22:58:42.130037 [info ] [Thread-5 (]: 12 of 15 START test unique_stg_customers_customer_id ........................... [RUN]
+[0m22:58:42.130403 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.ecommerce_medallion.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c, now test.ecommerce_medallion.unique_stg_customers_customer_id.c7614daada)
+[0m22:58:42.130673 [debug] [Thread-5 (]: Began compiling node test.ecommerce_medallion.unique_stg_customers_customer_id.c7614daada
+[0m22:58:42.135984 [debug] [Thread-5 (]: Writing injected SQL for node "test.ecommerce_medallion.unique_stg_customers_customer_id.c7614daada"
+[0m22:58:42.136810 [debug] [Thread-5 (]: Began executing node test.ecommerce_medallion.unique_stg_customers_customer_id.c7614daada
+[0m22:58:42.137976 [debug] [Thread-5 (]: Writing runtime sql for node "test.ecommerce_medallion.unique_stg_customers_customer_id.c7614daada"
+[0m22:58:42.138656 [debug] [Thread-5 (]: Using snowflake connection "test.ecommerce_medallion.unique_stg_customers_customer_id.c7614daada"
+[0m22:58:42.138894 [debug] [Thread-5 (]: On test.ecommerce_medallion.unique_stg_customers_customer_id.c7614daada: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from DE_ECOMMERCE_DB.SILVER_silver.stg_customers
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.unique_stg_customers_customer_id.c7614daada"} */
+[0m22:58:42.161657 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.195 seconds
+[0m22:58:42.163015 [info ] [Thread-3 (]: 9 of 15 PASS relationships_stg_orders_customer_id__customer_id__ref_stg_customers_  [[32mPASS[0m in 0.21s]
+[0m22:58:42.163415 [debug] [Thread-3 (]: Finished running node test.ecommerce_medallion.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500
+[0m22:58:42.163679 [debug] [Thread-3 (]: Began running node test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108
+[0m22:58:42.163972 [info ] [Thread-3 (]: 13 of 15 START test unique_stg_order_items_order_item_id ....................... [RUN]
+[0m22:58:42.164322 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.ecommerce_medallion.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500, now test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108)
+[0m22:58:42.164585 [debug] [Thread-3 (]: Began compiling node test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108
+[0m22:58:42.169309 [debug] [Thread-3 (]: Writing injected SQL for node "test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108"
+[0m22:58:42.169848 [debug] [Thread-3 (]: Began executing node test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108
+[0m22:58:42.171047 [debug] [Thread-3 (]: Writing runtime sql for node "test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108"
+[0m22:58:42.171740 [debug] [Thread-3 (]: Using snowflake connection "test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108"
+[0m22:58:42.171985 [debug] [Thread-3 (]: On test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    order_item_id as unique_field,
+    count(*) as n_records
+
+from DE_ECOMMERCE_DB.SILVER_silver.stg_order_items
+where order_item_id is not null
+group by order_item_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108"} */
+[0m22:58:42.239104 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.138 seconds
+[0m22:58:42.240934 [info ] [Thread-4 (]: 11 of 15 PASS unique_mart_daily_revenue_order_date ............................. [[32mPASS[0m in 0.15s]
+[0m22:58:42.241476 [debug] [Thread-4 (]: Finished running node test.ecommerce_medallion.unique_mart_daily_revenue_order_date.d69c8c5e9b
+[0m22:58:42.241837 [debug] [Thread-4 (]: Began running node test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a
+[0m22:58:42.242231 [info ] [Thread-4 (]: 14 of 15 START test unique_stg_orders_order_id ................................. [RUN]
+[0m22:58:42.242638 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.ecommerce_medallion.unique_mart_daily_revenue_order_date.d69c8c5e9b, now test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a)
+[0m22:58:42.242937 [debug] [Thread-4 (]: Began compiling node test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a
+[0m22:58:42.249344 [debug] [Thread-4 (]: Writing injected SQL for node "test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a"
+[0m22:58:42.249944 [debug] [Thread-4 (]: Began executing node test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a
+[0m22:58:42.251290 [debug] [Thread-4 (]: Writing runtime sql for node "test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a"
+[0m22:58:42.252014 [debug] [Thread-4 (]: Using snowflake connection "test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a"
+[0m22:58:42.252286 [debug] [Thread-4 (]: On test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    order_id as unique_field,
+    count(*) as n_records
+
+from DE_ECOMMERCE_DB.SILVER_silver.stg_orders
+where order_id is not null
+group by order_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a"} */
+[0m22:58:42.269439 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.130 seconds
+[0m22:58:42.271116 [info ] [Thread-5 (]: 12 of 15 PASS unique_stg_customers_customer_id ................................. [[32mPASS[0m in 0.14s]
+[0m22:58:42.271538 [debug] [Thread-5 (]: Finished running node test.ecommerce_medallion.unique_stg_customers_customer_id.c7614daada
+[0m22:58:42.271810 [debug] [Thread-5 (]: Began running node test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467
+[0m22:58:42.272101 [info ] [Thread-5 (]: 15 of 15 START test unique_stg_products_product_id ............................. [RUN]
+[0m22:58:42.272430 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.ecommerce_medallion.unique_stg_customers_customer_id.c7614daada, now test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467)
+[0m22:58:42.272680 [debug] [Thread-5 (]: Began compiling node test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467
+[0m22:58:42.277831 [debug] [Thread-5 (]: Writing injected SQL for node "test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467"
+[0m22:58:42.278351 [debug] [Thread-5 (]: Began executing node test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467
+[0m22:58:42.279588 [debug] [Thread-5 (]: Writing runtime sql for node "test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467"
+[0m22:58:42.280268 [debug] [Thread-5 (]: Using snowflake connection "test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467"
+[0m22:58:42.280508 [debug] [Thread-5 (]: On test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    product_id as unique_field,
+    count(*) as n_records
+
+from DE_ECOMMERCE_DB.SILVER_silver.stg_products
+where product_id is not null
+group by product_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467"} */
+[0m22:58:42.299294 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.127 seconds
+[0m22:58:42.300630 [info ] [Thread-3 (]: 13 of 15 PASS unique_stg_order_items_order_item_id ............................. [[32mPASS[0m in 0.14s]
+[0m22:58:42.301031 [debug] [Thread-3 (]: Finished running node test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108
+[0m22:58:42.333635 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.231 seconds
+[0m22:58:42.335119 [info ] [Thread-2 (]: 10 of 15 PASS unique_fct_order_items_order_item_id ............................. [[32mPASS[0m in 0.26s]
+[0m22:58:42.335569 [debug] [Thread-2 (]: Finished running node test.ecommerce_medallion.unique_fct_order_items_order_item_id.0dec5f6768
+[0m22:58:42.396892 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.144 seconds
+[0m22:58:42.399425 [info ] [Thread-4 (]: 14 of 15 PASS unique_stg_orders_order_id ....................................... [[32mPASS[0m in 0.16s]
+[0m22:58:42.400076 [debug] [Thread-4 (]: Finished running node test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a
+[0m22:58:42.413971 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.133 seconds
+[0m22:58:42.416043 [info ] [Thread-5 (]: 15 of 15 PASS unique_stg_products_product_id ................................... [[32mPASS[0m in 0.14s]
+[0m22:58:42.416677 [debug] [Thread-5 (]: Finished running node test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467
+[0m22:58:42.418383 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:58:42.418791 [debug] [MainThread]: Connection 'test.ecommerce_medallion.unique_fct_order_items_order_item_id.0dec5f6768' was left open.
+[0m22:58:42.419145 [debug] [MainThread]: On test.ecommerce_medallion.unique_fct_order_items_order_item_id.0dec5f6768: Close
+[0m22:58:42.559579 [debug] [MainThread]: Connection 'test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108' was left open.
+[0m22:58:42.560397 [debug] [MainThread]: On test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108: Close
+[0m22:58:42.690852 [debug] [MainThread]: Connection 'test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a' was left open.
+[0m22:58:42.691630 [debug] [MainThread]: On test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a: Close
+[0m22:58:42.849697 [debug] [MainThread]: Connection 'test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467' was left open.
+[0m22:58:42.850233 [debug] [MainThread]: On test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467: Close
+[0m22:58:42.981681 [info ] [MainThread]: 
+[0m22:58:42.982500 [info ] [MainThread]: Finished running 15 data tests in 0 hours 0 minutes and 2.66 seconds (2.66s).
+[0m22:58:42.986276 [debug] [MainThread]: Command end result
+[0m22:58:43.026853 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/manifest.json
+[0m22:58:43.029064 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/semantic_manifest.json
+[0m22:58:43.030992 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/osi_document.json
+[0m22:58:43.036421 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/run_results.json
+[0m22:58:43.036634 [info ] [MainThread]: 
+[0m22:58:43.036868 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:58:43.037039 [info ] [MainThread]: 
+[0m22:58:43.037233 [info ] [MainThread]: Done. PASS=15 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=15
+[0m22:58:43.041652 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 3.655887, "process_in_blocks": "0", "process_kernel_time": 0.293785, "process_mem_max_rss": "245186560", "process_out_blocks": "0", "process_user_time": 2.428018}
+[0m22:58:43.042027 [debug] [MainThread]: Command `dbt test` succeeded at 22:58:43.041978 after 3.66 seconds
+[0m22:58:43.042244 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111f29b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109274260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109274e10>]}
+[0m22:58:43.042440 [debug] [MainThread]: Flushing usage events
+[0m22:58:43.046237 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:01:55.166718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b27a120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca8a710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca8a990>]}
+
+
+============================== 23:01:55.169821 | 3f037df5-3d55-4440-9a66-45f0164e40ed ==============================
+[0m23:01:55.169821 [info ] [MainThread]: Running with dbt=1.12.5
+[0m23:01:55.170133 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'maximum_seed_size_mib': '1', 'log_format': 'default', 'log_cache_events': 'False', 'introspect': 'True', 'debug': 'False', 'invocation_command': 'dbt run', 'write_json': 'True', 'use_experimental_parser': 'False', 'hints_enabled': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'log_path': '/Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/logs', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'partial_parse': 'True', 'static_parser': 'True', 'profiles_dir': '/Users/sowrabhmanjappa/.dbt', 'version_check': 'True', 'indirect_selection': 'eager', 'target_path': 'None', 'empty': 'False'}
+[0m23:01:55.725345 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m23:01:55.725654 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m23:01:55.725802 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m23:01:55.856571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3f037df5-3d55-4440-9a66-45f0164e40ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111872fd0>]}
+[0m23:01:55.886424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3f037df5-3d55-4440-9a66-45f0164e40ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111d1b240>]}
+[0m23:01:55.887063 [info ] [MainThread]: Registered adapter: snowflake=1.12.1
+[0m23:01:55.967789 [debug] [MainThread]: checksum: 77ffcdfdd87357c644876f58fa7b09a93c3b2beb13b897bb470eb360b14c183a, vars: {}, profile: ecommerce_medallion, target: dev, version: 1.12.5
+[0m23:01:56.051754 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m23:01:56.052065 [debug] [MainThread]: Partial parsing: added file: ecommerce_medallion://macros/generate_schema_name.sql
+[0m23:01:56.053383 [info ] [MainThread]: Unable to do partial parsing because change detected to override macro. Starting full parse.
+[0m23:01:56.780326 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'stg_orders' in
+package 'ecommerce_medallion' (models/staging/_staging__models.yml). Arguments
+to generic tests should be nested under the `arguments` property.
+[0m23:01:56.780662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '3f037df5-3d55-4440-9a66-45f0164e40ed', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111b4e850>]}
+[0m23:01:56.867035 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3f037df5-3d55-4440-9a66-45f0164e40ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1119277a0>]}
+[0m23:01:56.920255 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/manifest.json
+[0m23:01:56.922373 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/semantic_manifest.json
+[0m23:01:56.934100 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/osi_document.json
+[0m23:01:56.940680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3f037df5-3d55-4440-9a66-45f0164e40ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111e24c90>]}
+[0m23:01:56.940899 [info ] [MainThread]: Found 8 models, 15 data tests, 4 sources, 563 macros
+[0m23:01:56.941068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3f037df5-3d55-4440-9a66-45f0164e40ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11223c050>]}
+[0m23:01:56.942253 [info ] [MainThread]: 
+[0m23:01:56.942427 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m23:01:56.942552 [info ] [MainThread]: 
+[0m23:01:56.942790 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m23:01:56.945077 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DE_ECOMMERCE_DB'
+[0m23:01:56.945318 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DE_ECOMMERCE_DB'
+[0m23:01:56.952463 [debug] [ThreadPool]: Using snowflake connection "list_DE_ECOMMERCE_DB"
+[0m23:01:56.952837 [debug] [ThreadPool]: On list_DE_ECOMMERCE_DB: show terse schemas in database DE_ECOMMERCE_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "list_DE_ECOMMERCE_DB"} */
+[0m23:01:56.952978 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:01:56.952698 [debug] [ThreadPool]: Using snowflake connection "list_DE_ECOMMERCE_DB"
+[0m23:01:56.953145 [debug] [ThreadPool]: On list_DE_ECOMMERCE_DB: show terse schemas in database DE_ECOMMERCE_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "list_DE_ECOMMERCE_DB"} */
+[0m23:01:56.953272 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:01:57.818740 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.865 seconds
+[0m23:01:57.849057 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.896 seconds
+[0m23:01:57.853258 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DE_ECOMMERCE_DB, now list_DE_ECOMMERCE_DB_silver)
+[0m23:01:57.853892 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DE_ECOMMERCE_DB, now list_DE_ECOMMERCE_DB_gold)
+[0m23:01:57.876502 [debug] [ThreadPool]: Using snowflake connection "list_DE_ECOMMERCE_DB_silver"
+[0m23:01:57.879800 [debug] [ThreadPool]: On list_DE_ECOMMERCE_DB_silver: show objects in DE_ECOMMERCE_DB.silver
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "list_DE_ECOMMERCE_DB_silver"} */;
+[0m23:01:57.879523 [debug] [ThreadPool]: Using snowflake connection "list_DE_ECOMMERCE_DB_gold"
+[0m23:01:57.880361 [debug] [ThreadPool]: On list_DE_ECOMMERCE_DB_gold: show objects in DE_ECOMMERCE_DB.gold
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "list_DE_ECOMMERCE_DB_gold"} */;
+[0m23:01:58.005120 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.124 seconds
+[0m23:01:58.016246 [debug] [ThreadPool]: Using snowflake connection "list_DE_ECOMMERCE_DB_gold"
+[0m23:01:58.016783 [debug] [ThreadPool]: On list_DE_ECOMMERCE_DB_gold: show user functions in DE_ECOMMERCE_DB.gold
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "list_DE_ECOMMERCE_DB_gold"} */
+[0m23:01:58.018367 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.138 seconds
+[0m23:01:58.021607 [debug] [ThreadPool]: Using snowflake connection "list_DE_ECOMMERCE_DB_silver"
+[0m23:01:58.022127 [debug] [ThreadPool]: On list_DE_ECOMMERCE_DB_silver: show user functions in DE_ECOMMERCE_DB.silver
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "list_DE_ECOMMERCE_DB_silver"} */
+[0m23:01:58.117479 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.095 seconds
+[0m23:01:58.119054 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.102 seconds
+[0m23:01:58.123133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3f037df5-3d55-4440-9a66-45f0164e40ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11219bb90>]}
+[0m23:01:58.128274 [debug] [Thread-4 (]: Began running node model.ecommerce_medallion.stg_orders
+[0m23:01:58.128717 [debug] [Thread-2 (]: Began running node model.ecommerce_medallion.stg_customers
+[0m23:01:58.129105 [debug] [Thread-3 (]: Began running node model.ecommerce_medallion.stg_order_items
+[0m23:01:58.129444 [debug] [Thread-5 (]: Began running node model.ecommerce_medallion.stg_products
+[0m23:01:58.129950 [info ] [Thread-4 (]: 3 of 8 START sql view model silver.stg_orders .................................. [RUN]
+[0m23:01:58.130461 [info ] [Thread-2 (]: 1 of 8 START sql view model silver.stg_customers ............................... [RUN]
+[0m23:01:58.130973 [info ] [Thread-3 (]: 2 of 8 START sql view model silver.stg_order_items ............................. [RUN]
+[0m23:01:58.132811 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_DE_ECOMMERCE_DB_gold, now model.ecommerce_medallion.stg_order_items)
+[0m23:01:58.133155 [debug] [Thread-3 (]: Began compiling node model.ecommerce_medallion.stg_order_items
+[0m23:01:58.132447 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_DE_ECOMMERCE_DB_silver, now model.ecommerce_medallion.stg_customers)
+[0m23:01:58.131501 [info ] [Thread-5 (]: 4 of 8 START sql view model silver.stg_products ................................ [RUN]
+[0m23:01:58.132062 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.ecommerce_medallion.stg_orders'
+[0m23:01:58.140966 [debug] [Thread-4 (]: Began compiling node model.ecommerce_medallion.stg_orders
+[0m23:01:58.142390 [debug] [Thread-4 (]: Writing injected SQL for node "model.ecommerce_medallion.stg_orders"
+[0m23:01:58.140667 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.ecommerce_medallion.stg_products'
+[0m23:01:58.139898 [debug] [Thread-3 (]: Writing injected SQL for node "model.ecommerce_medallion.stg_order_items"
+[0m23:01:58.140229 [debug] [Thread-2 (]: Began compiling node model.ecommerce_medallion.stg_customers
+[0m23:01:58.144226 [debug] [Thread-2 (]: Writing injected SQL for node "model.ecommerce_medallion.stg_customers"
+[0m23:01:58.144511 [debug] [Thread-4 (]: Began executing node model.ecommerce_medallion.stg_orders
+[0m23:01:58.142737 [debug] [Thread-5 (]: Began compiling node model.ecommerce_medallion.stg_products
+[0m23:01:58.151130 [debug] [Thread-3 (]: Began executing node model.ecommerce_medallion.stg_order_items
+[0m23:01:58.158576 [debug] [Thread-5 (]: Writing injected SQL for node "model.ecommerce_medallion.stg_products"
+[0m23:01:58.166048 [debug] [Thread-4 (]: Writing runtime sql for node "model.ecommerce_medallion.stg_orders"
+[0m23:01:58.166280 [debug] [Thread-2 (]: Began executing node model.ecommerce_medallion.stg_customers
+[0m23:01:58.168422 [debug] [Thread-2 (]: Writing runtime sql for node "model.ecommerce_medallion.stg_customers"
+[0m23:01:58.167322 [debug] [Thread-3 (]: Writing runtime sql for node "model.ecommerce_medallion.stg_order_items"
+[0m23:01:58.168750 [debug] [Thread-5 (]: Began executing node model.ecommerce_medallion.stg_products
+[0m23:01:58.169719 [debug] [Thread-5 (]: Writing runtime sql for node "model.ecommerce_medallion.stg_products"
+[0m23:01:58.170173 [debug] [Thread-4 (]: Using snowflake connection "model.ecommerce_medallion.stg_orders"
+[0m23:01:58.170371 [debug] [Thread-4 (]: On model.ecommerce_medallion.stg_orders: create or replace   view DE_ECOMMERCE_DB.silver.stg_orders
+  
+  
+  
+  
+  as (
+    select
+    order_id,
+    customer_id,
+    order_date,
+    lower(trim(status)) as status
+from DE_ECOMMERCE_DB.BRONZE.orders
+  )
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "model.ecommerce_medallion.stg_orders"} */;
+[0m23:01:58.170986 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m23:01:58.171333 [debug] [Thread-3 (]: Using snowflake connection "model.ecommerce_medallion.stg_order_items"
+[0m23:01:58.171898 [debug] [Thread-3 (]: On model.ecommerce_medallion.stg_order_items: create or replace   view DE_ECOMMERCE_DB.silver.stg_order_items
+  
+  
+  
+  
+  as (
+    select
+    order_item_id,
+    order_id,
+    product_id,
+    quantity,
+    unit_price,
+    quantity * unit_price as line_amount
+from DE_ECOMMERCE_DB.BRONZE.order_items
+  )
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "model.ecommerce_medallion.stg_order_items"} */;
+[0m23:01:58.171715 [debug] [Thread-5 (]: Using snowflake connection "model.ecommerce_medallion.stg_products"
+[0m23:01:58.170766 [debug] [Thread-2 (]: Using snowflake connection "model.ecommerce_medallion.stg_customers"
+[0m23:01:58.172727 [debug] [Thread-2 (]: On model.ecommerce_medallion.stg_customers: create or replace   view DE_ECOMMERCE_DB.silver.stg_customers
+  
+  
+  
+  
+  as (
+    select
+    customer_id,
+    trim(first_name) as first_name,
+    trim(last_name) as last_name,
+    lower(trim(email)) as email,
+    signup_date,
+    trim(city) as city,
+    trim(country) as country
+from DE_ECOMMERCE_DB.BRONZE.customers
+  )
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "model.ecommerce_medallion.stg_customers"} */;
+[0m23:01:58.172325 [debug] [Thread-5 (]: On model.ecommerce_medallion.stg_products: create or replace   view DE_ECOMMERCE_DB.silver.stg_products
+  
+  
+  
+  
+  as (
+    select
+    product_id,
+    trim(product_name) as product_name,
+    trim(category) as category,
+    unit_price
+from DE_ECOMMERCE_DB.BRONZE.products
+  )
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "model.ecommerce_medallion.stg_products"} */;
+[0m23:01:58.255362 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m23:01:58.472677 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.301 seconds
+[0m23:01:58.486422 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.313 seconds
+[0m23:01:58.489192 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3f037df5-3d55-4440-9a66-45f0164e40ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112885650>]}
+[0m23:01:58.489400 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3f037df5-3d55-4440-9a66-45f0164e40ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096f2170>]}
+[0m23:01:58.490116 [info ] [Thread-2 (]: 1 of 8 OK created sql view model silver.stg_customers .......................... [[32mSUCCESS 1[0m in 0.36s]
+[0m23:01:58.490441 [debug] [Thread-2 (]: Finished running node model.ecommerce_medallion.stg_customers
+[0m23:01:58.489766 [info ] [Thread-3 (]: 2 of 8 OK created sql view model silver.stg_order_items ........................ [[32mSUCCESS 1[0m in 0.35s]
+[0m23:01:58.490809 [debug] [Thread-3 (]: Finished running node model.ecommerce_medallion.stg_order_items
+[0m23:01:58.491015 [debug] [Thread-2 (]: Began running node model.ecommerce_medallion.dim_customers
+[0m23:01:58.491271 [info ] [Thread-2 (]: 5 of 8 START sql table model gold.dim_customers ................................ [RUN]
+[0m23:01:58.491498 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ecommerce_medallion.stg_customers, now model.ecommerce_medallion.dim_customers)
+[0m23:01:58.491673 [debug] [Thread-2 (]: Began compiling node model.ecommerce_medallion.dim_customers
+[0m23:01:58.492645 [debug] [Thread-2 (]: Writing injected SQL for node "model.ecommerce_medallion.dim_customers"
+[0m23:01:58.492991 [debug] [Thread-2 (]: Began executing node model.ecommerce_medallion.dim_customers
+[0m23:01:58.506861 [debug] [Thread-2 (]: Writing runtime sql for node "model.ecommerce_medallion.dim_customers"
+[0m23:01:58.507320 [debug] [Thread-2 (]: Using snowflake connection "model.ecommerce_medallion.dim_customers"
+[0m23:01:58.507500 [debug] [Thread-2 (]: On model.ecommerce_medallion.dim_customers: create or replace transient table DE_ECOMMERCE_DB.gold.dim_customers
+    
+    
+    
+    
+    
+
+    as (select * from DE_ECOMMERCE_DB.silver.stg_customers
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "model.ecommerce_medallion.dim_customers"} */;
+[0m23:01:58.813334 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.558 seconds
+[0m23:01:58.817545 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3f037df5-3d55-4440-9a66-45f0164e40ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11294b2d0>]}
+[0m23:01:58.818688 [info ] [Thread-5 (]: 4 of 8 OK created sql view model silver.stg_products ........................... [[32mSUCCESS 1[0m in 0.68s]
+[0m23:01:58.819507 [debug] [Thread-5 (]: Finished running node model.ecommerce_medallion.stg_products
+[0m23:01:58.820331 [debug] [Thread-3 (]: Began running node model.ecommerce_medallion.dim_products
+[0m23:01:58.820915 [info ] [Thread-3 (]: 6 of 8 START sql table model gold.dim_products ................................. [RUN]
+[0m23:01:58.821480 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.ecommerce_medallion.stg_order_items, now model.ecommerce_medallion.dim_products)
+[0m23:01:58.821862 [debug] [Thread-3 (]: Began compiling node model.ecommerce_medallion.dim_products
+[0m23:01:58.824581 [debug] [Thread-3 (]: Writing injected SQL for node "model.ecommerce_medallion.dim_products"
+[0m23:01:58.826193 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.655 seconds
+[0m23:01:58.829949 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3f037df5-3d55-4440-9a66-45f0164e40ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111c25a90>]}
+[0m23:01:58.830458 [debug] [Thread-3 (]: Began executing node model.ecommerce_medallion.dim_products
+[0m23:01:58.832948 [debug] [Thread-3 (]: Writing runtime sql for node "model.ecommerce_medallion.dim_products"
+[0m23:01:58.831015 [info ] [Thread-4 (]: 3 of 8 OK created sql view model silver.stg_orders ............................. [[32mSUCCESS 1[0m in 0.70s]
+[0m23:01:58.833660 [debug] [Thread-4 (]: Finished running node model.ecommerce_medallion.stg_orders
+[0m23:01:58.834267 [debug] [Thread-5 (]: Began running node model.ecommerce_medallion.fct_order_items
+[0m23:01:58.834924 [debug] [Thread-3 (]: Using snowflake connection "model.ecommerce_medallion.dim_products"
+[0m23:01:58.835791 [debug] [Thread-3 (]: On model.ecommerce_medallion.dim_products: create or replace transient table DE_ECOMMERCE_DB.gold.dim_products
+    
+    
+    
+    
+    
+
+    as (select * from DE_ECOMMERCE_DB.silver.stg_products
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "model.ecommerce_medallion.dim_products"} */;
+[0m23:01:58.835378 [info ] [Thread-5 (]: 7 of 8 START sql table model gold.fct_order_items .............................. [RUN]
+[0m23:01:58.836495 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly model.ecommerce_medallion.stg_products, now model.ecommerce_medallion.fct_order_items)
+[0m23:01:58.837094 [debug] [Thread-5 (]: Began compiling node model.ecommerce_medallion.fct_order_items
+[0m23:01:58.839048 [debug] [Thread-5 (]: Writing injected SQL for node "model.ecommerce_medallion.fct_order_items"
+[0m23:01:58.839851 [debug] [Thread-5 (]: Began executing node model.ecommerce_medallion.fct_order_items
+[0m23:01:58.841356 [debug] [Thread-5 (]: Writing runtime sql for node "model.ecommerce_medallion.fct_order_items"
+[0m23:01:58.842324 [debug] [Thread-5 (]: Using snowflake connection "model.ecommerce_medallion.fct_order_items"
+[0m23:01:58.842644 [debug] [Thread-5 (]: On model.ecommerce_medallion.fct_order_items: create or replace transient table DE_ECOMMERCE_DB.gold.fct_order_items
+    
+    
+    
+    
+    
+
+    as (select
+    oi.order_item_id,
+    oi.order_id,
+    o.customer_id,
+    oi.product_id,
+    o.order_date,
+    o.status,
+    oi.quantity,
+    oi.unit_price,
+    oi.line_amount
+from DE_ECOMMERCE_DB.silver.stg_order_items oi
+join DE_ECOMMERCE_DB.silver.stg_orders o on oi.order_id = o.order_id
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "model.ecommerce_medallion.fct_order_items"} */;
+[0m23:01:59.517499 [debug] [Thread-3 (]: SQL status: SUCCESS 30 in 0.681 seconds
+[0m23:01:59.521771 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3f037df5-3d55-4440-9a66-45f0164e40ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111bea870>]}
+[0m23:01:59.522926 [info ] [Thread-3 (]: 6 of 8 OK created sql table model gold.dim_products ............................ [[32mSUCCESS 30[0m in 0.70s]
+[0m23:01:59.524375 [debug] [Thread-3 (]: Finished running node model.ecommerce_medallion.dim_products
+[0m23:01:59.525637 [debug] [Thread-2 (]: SQL status: SUCCESS 100 in 1.018 seconds
+[0m23:01:59.528005 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3f037df5-3d55-4440-9a66-45f0164e40ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd79610>]}
+[0m23:01:59.528878 [info ] [Thread-2 (]: 5 of 8 OK created sql table model gold.dim_customers ........................... [[32mSUCCESS 100[0m in 1.04s]
+[0m23:01:59.529576 [debug] [Thread-2 (]: Finished running node model.ecommerce_medallion.dim_customers
+[0m23:01:59.664352 [debug] [Thread-5 (]: SQL status: SUCCESS 1956 in 0.821 seconds
+[0m23:01:59.670384 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3f037df5-3d55-4440-9a66-45f0164e40ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca62630>]}
+[0m23:01:59.671052 [info ] [Thread-5 (]: 7 of 8 OK created sql table model gold.fct_order_items ......................... [[32mSUCCESS 1956[0m in 0.83s]
+[0m23:01:59.671625 [debug] [Thread-5 (]: Finished running node model.ecommerce_medallion.fct_order_items
+[0m23:01:59.672469 [debug] [Thread-4 (]: Began running node model.ecommerce_medallion.mart_daily_revenue
+[0m23:01:59.672929 [info ] [Thread-4 (]: 8 of 8 START sql table model gold.mart_daily_revenue ........................... [RUN]
+[0m23:01:59.673374 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.ecommerce_medallion.stg_orders, now model.ecommerce_medallion.mart_daily_revenue)
+[0m23:01:59.673717 [debug] [Thread-4 (]: Began compiling node model.ecommerce_medallion.mart_daily_revenue
+[0m23:01:59.675794 [debug] [Thread-4 (]: Writing injected SQL for node "model.ecommerce_medallion.mart_daily_revenue"
+[0m23:01:59.676512 [debug] [Thread-4 (]: Began executing node model.ecommerce_medallion.mart_daily_revenue
+[0m23:01:59.679099 [debug] [Thread-4 (]: Writing runtime sql for node "model.ecommerce_medallion.mart_daily_revenue"
+[0m23:01:59.680039 [debug] [Thread-4 (]: Using snowflake connection "model.ecommerce_medallion.mart_daily_revenue"
+[0m23:01:59.680391 [debug] [Thread-4 (]: On model.ecommerce_medallion.mart_daily_revenue: create or replace transient table DE_ECOMMERCE_DB.gold.mart_daily_revenue
+    
+    
+    
+    
+    
+
+    as (select
+    order_date,
+    count(distinct order_id) as order_count,
+    sum(line_amount) as total_revenue
+from DE_ECOMMERCE_DB.gold.fct_order_items
+where status != 'cancelled'
+group by order_date
+order by order_date
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "model.ecommerce_medallion.mart_daily_revenue"} */;
+[0m23:02:00.285615 [debug] [Thread-4 (]: SQL status: SUCCESS 30 in 0.604 seconds
+[0m23:02:00.290802 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3f037df5-3d55-4440-9a66-45f0164e40ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca61490>]}
+[0m23:02:00.291629 [info ] [Thread-4 (]: 8 of 8 OK created sql table model gold.mart_daily_revenue ...................... [[32mSUCCESS 30[0m in 0.62s]
+[0m23:02:00.292335 [debug] [Thread-4 (]: Finished running node model.ecommerce_medallion.mart_daily_revenue
+[0m23:02:00.293930 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:02:00.294283 [debug] [MainThread]: Connection 'model.ecommerce_medallion.dim_customers' was left open.
+[0m23:02:00.294581 [debug] [MainThread]: On model.ecommerce_medallion.dim_customers: Close
+[0m23:02:00.426911 [debug] [MainThread]: Connection 'model.ecommerce_medallion.dim_products' was left open.
+[0m23:02:00.427690 [debug] [MainThread]: On model.ecommerce_medallion.dim_products: Close
+[0m23:02:00.564247 [debug] [MainThread]: Connection 'model.ecommerce_medallion.mart_daily_revenue' was left open.
+[0m23:02:00.565311 [debug] [MainThread]: On model.ecommerce_medallion.mart_daily_revenue: Close
+[0m23:02:00.695922 [debug] [MainThread]: Connection 'model.ecommerce_medallion.fct_order_items' was left open.
+[0m23:02:00.696638 [debug] [MainThread]: On model.ecommerce_medallion.fct_order_items: Close
+[0m23:02:00.829525 [info ] [MainThread]: 
+[0m23:02:00.830379 [info ] [MainThread]: Finished running 4 table models, 4 view models in 0 hours 0 minutes and 3.89 seconds (3.89s).
+[0m23:02:00.833068 [debug] [MainThread]: Command end result
+[0m23:02:00.878846 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/manifest.json
+[0m23:02:00.881071 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/semantic_manifest.json
+[0m23:02:00.882970 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/osi_document.json
+[0m23:02:00.887802 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/run_results.json
+[0m23:02:00.887997 [info ] [MainThread]: 
+[0m23:02:00.888200 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:02:00.888360 [info ] [MainThread]: 
+[0m23:02:00.888530 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=8
+[0m23:02:00.888805 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 3 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m23:02:00.892953 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.8029337, "process_in_blocks": "0", "process_kernel_time": 0.328117, "process_mem_max_rss": "254705664", "process_out_blocks": "0", "process_user_time": 3.129354}
+[0m23:02:00.893368 [debug] [MainThread]: Command `dbt run` succeeded at 23:02:00.893319 after 5.80 seconds
+[0m23:02:00.893581 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111d1f770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111c54cb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111c54890>]}
+[0m23:02:00.893790 [debug] [MainThread]: Flushing usage events
+[0m23:02:01.060749 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:02:15.010423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d3ea120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ebfa710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ebfa990>]}
+
+
+============================== 23:02:15.013421 | 21fcad05-d03b-437d-9ddb-cc1b47e09e5f ==============================
+[0m23:02:15.013421 [info ] [MainThread]: Running with dbt=1.12.5
+[0m23:02:15.013738 [debug] [MainThread]: running dbt with arguments {'hints_enabled': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt test', 'no_print': 'None', 'version_check': 'True', 'profiles_dir': '/Users/sowrabhmanjappa/.dbt', 'target_path': 'None', 'cache_selected_only': 'False', 'maximum_seed_size_mib': '1', 'introspect': 'True', 'write_json': 'True', 'quiet': 'False', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'fail_fast': 'False', 'printer_width': '80', 'warn_error': 'None', 'log_format': 'default', 'use_colors': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'debug': 'False', 'log_path': '/Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/logs', 'indirect_selection': 'eager', 'empty': 'None'}
+[0m23:02:15.531627 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m23:02:15.531917 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m23:02:15.532065 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m23:02:15.650023 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '21fcad05-d03b-437d-9ddb-cc1b47e09e5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1139e2fd0>]}
+[0m23:02:15.680521 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '21fcad05-d03b-437d-9ddb-cc1b47e09e5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113e0b240>]}
+[0m23:02:15.681138 [info ] [MainThread]: Registered adapter: snowflake=1.12.1
+[0m23:02:15.764969 [debug] [MainThread]: checksum: 77ffcdfdd87357c644876f58fa7b09a93c3b2beb13b897bb470eb360b14c183a, vars: {}, profile: ecommerce_medallion, target: dev, version: 1.12.5
+[0m23:02:15.847789 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:02:15.847988 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m23:02:15.848112 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:02:15.853052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '21fcad05-d03b-437d-9ddb-cc1b47e09e5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114253e50>]}
+[0m23:02:15.928313 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/manifest.json
+[0m23:02:15.930306 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/semantic_manifest.json
+[0m23:02:15.940416 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/osi_document.json
+[0m23:02:15.951664 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '21fcad05-d03b-437d-9ddb-cc1b47e09e5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1142658b0>]}
+[0m23:02:15.951903 [info ] [MainThread]: Found 8 models, 15 data tests, 4 sources, 563 macros
+[0m23:02:15.952065 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '21fcad05-d03b-437d-9ddb-cc1b47e09e5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1145135b0>]}
+[0m23:02:15.953444 [info ] [MainThread]: 
+[0m23:02:15.953626 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m23:02:15.953755 [info ] [MainThread]: 
+[0m23:02:15.954041 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m23:02:15.956472 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DE_ECOMMERCE_DB_gold'
+[0m23:02:15.956721 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DE_ECOMMERCE_DB_silver'
+[0m23:02:15.967976 [debug] [ThreadPool]: Using snowflake connection "list_DE_ECOMMERCE_DB_gold"
+[0m23:02:15.968355 [debug] [ThreadPool]: On list_DE_ECOMMERCE_DB_gold: show objects in DE_ECOMMERCE_DB.gold
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "list_DE_ECOMMERCE_DB_gold"} */;
+[0m23:02:15.968515 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:02:15.968200 [debug] [ThreadPool]: Using snowflake connection "list_DE_ECOMMERCE_DB_silver"
+[0m23:02:15.968699 [debug] [ThreadPool]: On list_DE_ECOMMERCE_DB_silver: show objects in DE_ECOMMERCE_DB.silver
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "list_DE_ECOMMERCE_DB_silver"} */;
+[0m23:02:15.968825 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:02:16.883428 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.914 seconds
+[0m23:02:16.891004 [debug] [ThreadPool]: Using snowflake connection "list_DE_ECOMMERCE_DB_silver"
+[0m23:02:16.891463 [debug] [ThreadPool]: On list_DE_ECOMMERCE_DB_silver: show user functions in DE_ECOMMERCE_DB.silver
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "list_DE_ECOMMERCE_DB_silver"} */
+[0m23:02:16.918681 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.950 seconds
+[0m23:02:16.920864 [debug] [ThreadPool]: Using snowflake connection "list_DE_ECOMMERCE_DB_gold"
+[0m23:02:16.921134 [debug] [ThreadPool]: On list_DE_ECOMMERCE_DB_gold: show user functions in DE_ECOMMERCE_DB.gold
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "connection_name": "list_DE_ECOMMERCE_DB_gold"} */
+[0m23:02:16.992617 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.101 seconds
+[0m23:02:17.015960 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.095 seconds
+[0m23:02:17.018702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '21fcad05-d03b-437d-9ddb-cc1b47e09e5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1143664e0>]}
+[0m23:02:17.021984 [debug] [Thread-2 (]: Began running node test.ecommerce_medallion.not_null_fct_order_items_order_item_id.dbaab21f55
+[0m23:02:17.022430 [debug] [Thread-4 (]: Began running node test.ecommerce_medallion.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m23:02:17.022817 [debug] [Thread-5 (]: Began running node test.ecommerce_medallion.not_null_stg_order_items_order_item_id.26a7e2bc35
+[0m23:02:17.023989 [info ] [Thread-4 (]: 3 of 15 START test not_null_stg_customers_customer_id .......................... [RUN]
+[0m23:02:17.025026 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.ecommerce_medallion.not_null_stg_customers_customer_id.e2cfb1f9aa'
+[0m23:02:17.023151 [debug] [Thread-3 (]: Began running node test.ecommerce_medallion.not_null_mart_daily_revenue_order_date.afa9807e23
+[0m23:02:17.025613 [info ] [Thread-3 (]: 2 of 15 START test not_null_mart_daily_revenue_order_date ...................... [RUN]
+[0m23:02:17.023533 [info ] [Thread-2 (]: 1 of 15 START test not_null_fct_order_items_order_item_id ...................... [RUN]
+[0m23:02:17.026286 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_DE_ECOMMERCE_DB_gold, now test.ecommerce_medallion.not_null_fct_order_items_order_item_id.dbaab21f55)
+[0m23:02:17.024336 [info ] [Thread-5 (]: 4 of 15 START test not_null_stg_order_items_order_item_id ...................... [RUN]
+[0m23:02:17.026918 [debug] [Thread-5 (]: Acquiring new snowflake connection 'test.ecommerce_medallion.not_null_stg_order_items_order_item_id.26a7e2bc35'
+[0m23:02:17.025334 [debug] [Thread-4 (]: Began compiling node test.ecommerce_medallion.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m23:02:17.026562 [debug] [Thread-2 (]: Began compiling node test.ecommerce_medallion.not_null_fct_order_items_order_item_id.dbaab21f55
+[0m23:02:17.025967 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_DE_ECOMMERCE_DB_silver, now test.ecommerce_medallion.not_null_mart_daily_revenue_order_date.afa9807e23)
+[0m23:02:17.027187 [debug] [Thread-5 (]: Began compiling node test.ecommerce_medallion.not_null_stg_order_items_order_item_id.26a7e2bc35
+[0m23:02:17.043683 [debug] [Thread-4 (]: Writing injected SQL for node "test.ecommerce_medallion.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m23:02:17.048223 [debug] [Thread-2 (]: Writing injected SQL for node "test.ecommerce_medallion.not_null_fct_order_items_order_item_id.dbaab21f55"
+[0m23:02:17.048507 [debug] [Thread-3 (]: Began compiling node test.ecommerce_medallion.not_null_mart_daily_revenue_order_date.afa9807e23
+[0m23:02:17.059217 [debug] [Thread-3 (]: Writing injected SQL for node "test.ecommerce_medallion.not_null_mart_daily_revenue_order_date.afa9807e23"
+[0m23:02:17.052791 [debug] [Thread-5 (]: Writing injected SQL for node "test.ecommerce_medallion.not_null_stg_order_items_order_item_id.26a7e2bc35"
+[0m23:02:17.059674 [debug] [Thread-4 (]: Began executing node test.ecommerce_medallion.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m23:02:17.065765 [debug] [Thread-2 (]: Began executing node test.ecommerce_medallion.not_null_fct_order_items_order_item_id.dbaab21f55
+[0m23:02:17.073937 [debug] [Thread-2 (]: Writing runtime sql for node "test.ecommerce_medallion.not_null_fct_order_items_order_item_id.dbaab21f55"
+[0m23:02:17.073120 [debug] [Thread-3 (]: Began executing node test.ecommerce_medallion.not_null_mart_daily_revenue_order_date.afa9807e23
+[0m23:02:17.072913 [debug] [Thread-4 (]: Writing runtime sql for node "test.ecommerce_medallion.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m23:02:17.074168 [debug] [Thread-5 (]: Began executing node test.ecommerce_medallion.not_null_stg_order_items_order_item_id.26a7e2bc35
+[0m23:02:17.075689 [debug] [Thread-5 (]: Writing runtime sql for node "test.ecommerce_medallion.not_null_stg_order_items_order_item_id.26a7e2bc35"
+[0m23:02:17.074868 [debug] [Thread-3 (]: Writing runtime sql for node "test.ecommerce_medallion.not_null_mart_daily_revenue_order_date.afa9807e23"
+[0m23:02:17.076156 [debug] [Thread-2 (]: Using snowflake connection "test.ecommerce_medallion.not_null_fct_order_items_order_item_id.dbaab21f55"
+[0m23:02:17.076679 [debug] [Thread-2 (]: On test.ecommerce_medallion.not_null_fct_order_items_order_item_id.dbaab21f55: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_item_id
+from DE_ECOMMERCE_DB.gold.fct_order_items
+where order_item_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.not_null_fct_order_items_order_item_id.dbaab21f55"} */
+[0m23:02:17.076484 [debug] [Thread-4 (]: Using snowflake connection "test.ecommerce_medallion.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m23:02:17.077073 [debug] [Thread-4 (]: On test.ecommerce_medallion.not_null_stg_customers_customer_id.e2cfb1f9aa: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from DE_ECOMMERCE_DB.silver.stg_customers
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.not_null_stg_customers_customer_id.e2cfb1f9aa"} */
+[0m23:02:17.078091 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m23:02:17.077907 [debug] [Thread-3 (]: Using snowflake connection "test.ecommerce_medallion.not_null_mart_daily_revenue_order_date.afa9807e23"
+[0m23:02:17.078492 [debug] [Thread-3 (]: On test.ecommerce_medallion.not_null_mart_daily_revenue_order_date.afa9807e23: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_date
+from DE_ECOMMERCE_DB.gold.mart_daily_revenue
+where order_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.not_null_mart_daily_revenue_order_date.afa9807e23"} */
+[0m23:02:17.077406 [debug] [Thread-5 (]: Using snowflake connection "test.ecommerce_medallion.not_null_stg_order_items_order_item_id.26a7e2bc35"
+[0m23:02:17.078919 [debug] [Thread-5 (]: On test.ecommerce_medallion.not_null_stg_order_items_order_item_id.26a7e2bc35: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_item_id
+from DE_ECOMMERCE_DB.silver.stg_order_items
+where order_item_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.not_null_stg_order_items_order_item_id.26a7e2bc35"} */
+[0m23:02:17.079086 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m23:02:17.311946 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.233 seconds
+[0m23:02:17.317380 [info ] [Thread-3 (]: 2 of 15 PASS not_null_mart_daily_revenue_order_date ............................ [[32mPASS[0m in 0.29s]
+[0m23:02:17.317693 [debug] [Thread-3 (]: Finished running node test.ecommerce_medallion.not_null_mart_daily_revenue_order_date.afa9807e23
+[0m23:02:17.317885 [debug] [Thread-3 (]: Began running node test.ecommerce_medallion.not_null_stg_orders_order_id.81cfe2fe64
+[0m23:02:17.318072 [info ] [Thread-3 (]: 5 of 15 START test not_null_stg_orders_order_id ................................ [RUN]
+[0m23:02:17.318270 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.ecommerce_medallion.not_null_mart_daily_revenue_order_date.afa9807e23, now test.ecommerce_medallion.not_null_stg_orders_order_id.81cfe2fe64)
+[0m23:02:17.318421 [debug] [Thread-3 (]: Began compiling node test.ecommerce_medallion.not_null_stg_orders_order_id.81cfe2fe64
+[0m23:02:17.321946 [debug] [Thread-3 (]: Writing injected SQL for node "test.ecommerce_medallion.not_null_stg_orders_order_id.81cfe2fe64"
+[0m23:02:17.322339 [debug] [Thread-3 (]: Began executing node test.ecommerce_medallion.not_null_stg_orders_order_id.81cfe2fe64
+[0m23:02:17.323056 [debug] [Thread-3 (]: Writing runtime sql for node "test.ecommerce_medallion.not_null_stg_orders_order_id.81cfe2fe64"
+[0m23:02:17.323483 [debug] [Thread-3 (]: Using snowflake connection "test.ecommerce_medallion.not_null_stg_orders_order_id.81cfe2fe64"
+[0m23:02:17.323640 [debug] [Thread-3 (]: On test.ecommerce_medallion.not_null_stg_orders_order_id.81cfe2fe64: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_id
+from DE_ECOMMERCE_DB.silver.stg_orders
+where order_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.not_null_stg_orders_order_id.81cfe2fe64"} */
+[0m23:02:17.387201 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.310 seconds
+[0m23:02:17.388413 [info ] [Thread-2 (]: 1 of 15 PASS not_null_fct_order_items_order_item_id ............................ [[32mPASS[0m in 0.36s]
+[0m23:02:17.388769 [debug] [Thread-2 (]: Finished running node test.ecommerce_medallion.not_null_fct_order_items_order_item_id.dbaab21f55
+[0m23:02:17.388983 [debug] [Thread-2 (]: Began running node test.ecommerce_medallion.not_null_stg_products_product_id.6373b0acf3
+[0m23:02:17.389221 [info ] [Thread-2 (]: 6 of 15 START test not_null_stg_products_product_id ............................ [RUN]
+[0m23:02:17.389504 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.ecommerce_medallion.not_null_fct_order_items_order_item_id.dbaab21f55, now test.ecommerce_medallion.not_null_stg_products_product_id.6373b0acf3)
+[0m23:02:17.389710 [debug] [Thread-2 (]: Began compiling node test.ecommerce_medallion.not_null_stg_products_product_id.6373b0acf3
+[0m23:02:17.393675 [debug] [Thread-2 (]: Writing injected SQL for node "test.ecommerce_medallion.not_null_stg_products_product_id.6373b0acf3"
+[0m23:02:17.394114 [debug] [Thread-2 (]: Began executing node test.ecommerce_medallion.not_null_stg_products_product_id.6373b0acf3
+[0m23:02:17.394973 [debug] [Thread-2 (]: Writing runtime sql for node "test.ecommerce_medallion.not_null_stg_products_product_id.6373b0acf3"
+[0m23:02:17.395462 [debug] [Thread-2 (]: Using snowflake connection "test.ecommerce_medallion.not_null_stg_products_product_id.6373b0acf3"
+[0m23:02:17.395651 [debug] [Thread-2 (]: On test.ecommerce_medallion.not_null_stg_products_product_id.6373b0acf3: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_id
+from DE_ECOMMERCE_DB.silver.stg_products
+where product_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.not_null_stg_products_product_id.6373b0acf3"} */
+[0m23:02:17.436585 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.113 seconds
+[0m23:02:17.437860 [info ] [Thread-3 (]: 5 of 15 PASS not_null_stg_orders_order_id ...................................... [[32mPASS[0m in 0.12s]
+[0m23:02:17.438237 [debug] [Thread-3 (]: Finished running node test.ecommerce_medallion.not_null_stg_orders_order_id.81cfe2fe64
+[0m23:02:17.438492 [debug] [Thread-3 (]: Began running node test.ecommerce_medallion.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m23:02:17.438764 [info ] [Thread-3 (]: 7 of 15 START test relationships_stg_order_items_order_id__order_id__ref_stg_orders_  [RUN]
+[0m23:02:17.439081 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.ecommerce_medallion.not_null_stg_orders_order_id.81cfe2fe64, now test.ecommerce_medallion.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54)
+[0m23:02:17.439318 [debug] [Thread-3 (]: Began compiling node test.ecommerce_medallion.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m23:02:17.451696 [debug] [Thread-3 (]: Writing injected SQL for node "test.ecommerce_medallion.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54"
+[0m23:02:17.452134 [debug] [Thread-3 (]: Began executing node test.ecommerce_medallion.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m23:02:17.453039 [debug] [Thread-3 (]: Writing runtime sql for node "test.ecommerce_medallion.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54"
+[0m23:02:17.453700 [debug] [Thread-3 (]: Using snowflake connection "test.ecommerce_medallion.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54"
+[0m23:02:17.453930 [debug] [Thread-3 (]: On test.ecommerce_medallion.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select order_id as from_field
+    from DE_ECOMMERCE_DB.silver.stg_order_items
+    where order_id is not null
+),
+
+parent as (
+    select order_id as to_field
+    from DE_ECOMMERCE_DB.silver.stg_orders
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54"} */
+[0m23:02:17.515306 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.119 seconds
+[0m23:02:17.516704 [info ] [Thread-2 (]: 6 of 15 PASS not_null_stg_products_product_id .................................. [[32mPASS[0m in 0.13s]
+[0m23:02:17.517136 [debug] [Thread-2 (]: Finished running node test.ecommerce_medallion.not_null_stg_products_product_id.6373b0acf3
+[0m23:02:17.517433 [debug] [Thread-2 (]: Began running node test.ecommerce_medallion.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m23:02:17.517738 [info ] [Thread-2 (]: 8 of 15 START test relationships_stg_order_items_product_id__product_id__ref_stg_products_  [RUN]
+[0m23:02:17.518114 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.ecommerce_medallion.not_null_stg_products_product_id.6373b0acf3, now test.ecommerce_medallion.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c)
+[0m23:02:17.518648 [debug] [Thread-2 (]: Began compiling node test.ecommerce_medallion.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m23:02:17.530770 [debug] [Thread-2 (]: Writing injected SQL for node "test.ecommerce_medallion.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c"
+[0m23:02:17.531304 [debug] [Thread-2 (]: Began executing node test.ecommerce_medallion.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m23:02:17.532262 [debug] [Thread-2 (]: Writing runtime sql for node "test.ecommerce_medallion.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c"
+[0m23:02:17.533391 [debug] [Thread-2 (]: Using snowflake connection "test.ecommerce_medallion.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c"
+[0m23:02:17.533673 [debug] [Thread-2 (]: On test.ecommerce_medallion.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select product_id as from_field
+    from DE_ECOMMERCE_DB.silver.stg_order_items
+    where product_id is not null
+),
+
+parent as (
+    select product_id as to_field
+    from DE_ECOMMERCE_DB.silver.stg_products
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c"} */
+[0m23:02:17.631904 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.554 seconds
+[0m23:02:17.634134 [info ] [Thread-4 (]: 3 of 15 PASS not_null_stg_customers_customer_id ................................ [[32mPASS[0m in 0.61s]
+[0m23:02:17.634820 [debug] [Thread-4 (]: Finished running node test.ecommerce_medallion.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m23:02:17.635275 [debug] [Thread-4 (]: Began running node test.ecommerce_medallion.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500
+[0m23:02:17.635769 [info ] [Thread-4 (]: 9 of 15 START test relationships_stg_orders_customer_id__customer_id__ref_stg_customers_  [RUN]
+[0m23:02:17.636363 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.ecommerce_medallion.not_null_stg_customers_customer_id.e2cfb1f9aa, now test.ecommerce_medallion.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500)
+[0m23:02:17.636810 [debug] [Thread-4 (]: Began compiling node test.ecommerce_medallion.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500
+[0m23:02:17.652628 [debug] [Thread-4 (]: Writing injected SQL for node "test.ecommerce_medallion.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500"
+[0m23:02:17.653490 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.574 seconds
+[0m23:02:17.654783 [info ] [Thread-5 (]: 4 of 15 PASS not_null_stg_order_items_order_item_id ............................ [[32mPASS[0m in 0.63s]
+[0m23:02:17.655205 [debug] [Thread-5 (]: Finished running node test.ecommerce_medallion.not_null_stg_order_items_order_item_id.26a7e2bc35
+[0m23:02:17.655481 [debug] [Thread-5 (]: Began running node test.ecommerce_medallion.unique_fct_order_items_order_item_id.0dec5f6768
+[0m23:02:17.655752 [info ] [Thread-5 (]: 10 of 15 START test unique_fct_order_items_order_item_id ....................... [RUN]
+[0m23:02:17.656310 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.ecommerce_medallion.not_null_stg_order_items_order_item_id.26a7e2bc35, now test.ecommerce_medallion.unique_fct_order_items_order_item_id.0dec5f6768)
+[0m23:02:17.656558 [debug] [Thread-5 (]: Began compiling node test.ecommerce_medallion.unique_fct_order_items_order_item_id.0dec5f6768
+[0m23:02:17.656025 [debug] [Thread-4 (]: Began executing node test.ecommerce_medallion.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500
+[0m23:02:17.663081 [debug] [Thread-4 (]: Writing runtime sql for node "test.ecommerce_medallion.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500"
+[0m23:02:17.664077 [debug] [Thread-5 (]: Writing injected SQL for node "test.ecommerce_medallion.unique_fct_order_items_order_item_id.0dec5f6768"
+[0m23:02:17.664881 [debug] [Thread-4 (]: Using snowflake connection "test.ecommerce_medallion.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500"
+[0m23:02:17.665167 [debug] [Thread-4 (]: On test.ecommerce_medallion.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select customer_id as from_field
+    from DE_ECOMMERCE_DB.silver.stg_orders
+    where customer_id is not null
+),
+
+parent as (
+    select customer_id as to_field
+    from DE_ECOMMERCE_DB.silver.stg_customers
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500"} */
+[0m23:02:17.665633 [debug] [Thread-5 (]: Began executing node test.ecommerce_medallion.unique_fct_order_items_order_item_id.0dec5f6768
+[0m23:02:17.666760 [debug] [Thread-5 (]: Writing runtime sql for node "test.ecommerce_medallion.unique_fct_order_items_order_item_id.0dec5f6768"
+[0m23:02:17.667547 [debug] [Thread-5 (]: Using snowflake connection "test.ecommerce_medallion.unique_fct_order_items_order_item_id.0dec5f6768"
+[0m23:02:17.667792 [debug] [Thread-5 (]: On test.ecommerce_medallion.unique_fct_order_items_order_item_id.0dec5f6768: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    order_item_id as unique_field,
+    count(*) as n_records
+
+from DE_ECOMMERCE_DB.gold.fct_order_items
+where order_item_id is not null
+group by order_item_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.unique_fct_order_items_order_item_id.0dec5f6768"} */
+[0m23:02:17.732362 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.278 seconds
+[0m23:02:17.734083 [info ] [Thread-3 (]: 7 of 15 PASS relationships_stg_order_items_order_id__order_id__ref_stg_orders_ . [[32mPASS[0m in 0.29s]
+[0m23:02:17.734566 [debug] [Thread-3 (]: Finished running node test.ecommerce_medallion.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m23:02:17.734886 [debug] [Thread-3 (]: Began running node test.ecommerce_medallion.unique_mart_daily_revenue_order_date.d69c8c5e9b
+[0m23:02:17.735239 [info ] [Thread-3 (]: 11 of 15 START test unique_mart_daily_revenue_order_date ....................... [RUN]
+[0m23:02:17.735678 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.ecommerce_medallion.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54, now test.ecommerce_medallion.unique_mart_daily_revenue_order_date.d69c8c5e9b)
+[0m23:02:17.735999 [debug] [Thread-3 (]: Began compiling node test.ecommerce_medallion.unique_mart_daily_revenue_order_date.d69c8c5e9b
+[0m23:02:17.742354 [debug] [Thread-3 (]: Writing injected SQL for node "test.ecommerce_medallion.unique_mart_daily_revenue_order_date.d69c8c5e9b"
+[0m23:02:17.743315 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.209 seconds
+[0m23:02:17.744779 [info ] [Thread-2 (]: 8 of 15 PASS relationships_stg_order_items_product_id__product_id__ref_stg_products_  [[32mPASS[0m in 0.23s]
+[0m23:02:17.745230 [debug] [Thread-2 (]: Finished running node test.ecommerce_medallion.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m23:02:17.745551 [debug] [Thread-2 (]: Began running node test.ecommerce_medallion.unique_stg_customers_customer_id.c7614daada
+[0m23:02:17.746099 [info ] [Thread-2 (]: 12 of 15 START test unique_stg_customers_customer_id ........................... [RUN]
+[0m23:02:17.746403 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.ecommerce_medallion.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c, now test.ecommerce_medallion.unique_stg_customers_customer_id.c7614daada)
+[0m23:02:17.746671 [debug] [Thread-2 (]: Began compiling node test.ecommerce_medallion.unique_stg_customers_customer_id.c7614daada
+[0m23:02:17.751429 [debug] [Thread-2 (]: Writing injected SQL for node "test.ecommerce_medallion.unique_stg_customers_customer_id.c7614daada"
+[0m23:02:17.745850 [debug] [Thread-3 (]: Began executing node test.ecommerce_medallion.unique_mart_daily_revenue_order_date.d69c8c5e9b
+[0m23:02:17.752545 [debug] [Thread-3 (]: Writing runtime sql for node "test.ecommerce_medallion.unique_mart_daily_revenue_order_date.d69c8c5e9b"
+[0m23:02:17.752954 [debug] [Thread-2 (]: Began executing node test.ecommerce_medallion.unique_stg_customers_customer_id.c7614daada
+[0m23:02:17.753991 [debug] [Thread-2 (]: Writing runtime sql for node "test.ecommerce_medallion.unique_stg_customers_customer_id.c7614daada"
+[0m23:02:17.754558 [debug] [Thread-3 (]: Using snowflake connection "test.ecommerce_medallion.unique_mart_daily_revenue_order_date.d69c8c5e9b"
+[0m23:02:17.754842 [debug] [Thread-3 (]: On test.ecommerce_medallion.unique_mart_daily_revenue_order_date.d69c8c5e9b: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    order_date as unique_field,
+    count(*) as n_records
+
+from DE_ECOMMERCE_DB.gold.mart_daily_revenue
+where order_date is not null
+group by order_date
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.unique_mart_daily_revenue_order_date.d69c8c5e9b"} */
+[0m23:02:17.755382 [debug] [Thread-2 (]: Using snowflake connection "test.ecommerce_medallion.unique_stg_customers_customer_id.c7614daada"
+[0m23:02:17.755785 [debug] [Thread-2 (]: On test.ecommerce_medallion.unique_stg_customers_customer_id.c7614daada: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from DE_ECOMMERCE_DB.silver.stg_customers
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.unique_stg_customers_customer_id.c7614daada"} */
+[0m23:02:17.793749 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.126 seconds
+[0m23:02:17.795089 [info ] [Thread-5 (]: 10 of 15 PASS unique_fct_order_items_order_item_id ............................. [[32mPASS[0m in 0.14s]
+[0m23:02:17.795495 [debug] [Thread-5 (]: Finished running node test.ecommerce_medallion.unique_fct_order_items_order_item_id.0dec5f6768
+[0m23:02:17.795763 [debug] [Thread-5 (]: Began running node test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108
+[0m23:02:17.796041 [info ] [Thread-5 (]: 13 of 15 START test unique_stg_order_items_order_item_id ....................... [RUN]
+[0m23:02:17.796368 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.ecommerce_medallion.unique_fct_order_items_order_item_id.0dec5f6768, now test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108)
+[0m23:02:17.796613 [debug] [Thread-5 (]: Began compiling node test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108
+[0m23:02:17.802141 [debug] [Thread-5 (]: Writing injected SQL for node "test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108"
+[0m23:02:17.802673 [debug] [Thread-5 (]: Began executing node test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108
+[0m23:02:17.803744 [debug] [Thread-5 (]: Writing runtime sql for node "test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108"
+[0m23:02:17.804418 [debug] [Thread-5 (]: Using snowflake connection "test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108"
+[0m23:02:17.804668 [debug] [Thread-5 (]: On test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    order_item_id as unique_field,
+    count(*) as n_records
+
+from DE_ECOMMERCE_DB.silver.stg_order_items
+where order_item_id is not null
+group by order_item_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108"} */
+[0m23:02:17.875657 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.121 seconds
+[0m23:02:17.878141 [info ] [Thread-3 (]: 11 of 15 PASS unique_mart_daily_revenue_order_date ............................. [[32mPASS[0m in 0.14s]
+[0m23:02:17.876373 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.211 seconds
+[0m23:02:17.880292 [info ] [Thread-4 (]: 9 of 15 PASS relationships_stg_orders_customer_id__customer_id__ref_stg_customers_  [[32mPASS[0m in 0.24s]
+[0m23:02:17.880874 [debug] [Thread-4 (]: Finished running node test.ecommerce_medallion.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500
+[0m23:02:17.878693 [debug] [Thread-3 (]: Finished running node test.ecommerce_medallion.unique_mart_daily_revenue_order_date.d69c8c5e9b
+[0m23:02:17.881676 [debug] [Thread-3 (]: Began running node test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467
+[0m23:02:17.882037 [info ] [Thread-3 (]: 15 of 15 START test unique_stg_products_product_id ............................. [RUN]
+[0m23:02:17.882460 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.ecommerce_medallion.unique_mart_daily_revenue_order_date.d69c8c5e9b, now test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467)
+[0m23:02:17.881270 [debug] [Thread-4 (]: Began running node test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a
+[0m23:02:17.883168 [info ] [Thread-4 (]: 14 of 15 START test unique_stg_orders_order_id ................................. [RUN]
+[0m23:02:17.883780 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.ecommerce_medallion.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500, now test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a)
+[0m23:02:17.882792 [debug] [Thread-3 (]: Began compiling node test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467
+[0m23:02:17.890595 [debug] [Thread-3 (]: Writing injected SQL for node "test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467"
+[0m23:02:17.884689 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.128 seconds
+[0m23:02:17.884111 [debug] [Thread-4 (]: Began compiling node test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a
+[0m23:02:17.896993 [debug] [Thread-4 (]: Writing injected SQL for node "test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a"
+[0m23:02:17.891907 [info ] [Thread-2 (]: 12 of 15 PASS unique_stg_customers_customer_id ................................. [[32mPASS[0m in 0.15s]
+[0m23:02:17.897653 [debug] [Thread-2 (]: Finished running node test.ecommerce_medallion.unique_stg_customers_customer_id.c7614daada
+[0m23:02:17.898157 [debug] [Thread-3 (]: Began executing node test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467
+[0m23:02:17.899583 [debug] [Thread-3 (]: Writing runtime sql for node "test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467"
+[0m23:02:17.898493 [debug] [Thread-4 (]: Began executing node test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a
+[0m23:02:17.900666 [debug] [Thread-4 (]: Writing runtime sql for node "test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a"
+[0m23:02:17.906105 [debug] [Thread-4 (]: Using snowflake connection "test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a"
+[0m23:02:17.906361 [debug] [Thread-4 (]: On test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    order_id as unique_field,
+    count(*) as n_records
+
+from DE_ECOMMERCE_DB.silver.stg_orders
+where order_id is not null
+group by order_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a"} */
+[0m23:02:17.907685 [debug] [Thread-3 (]: Using snowflake connection "test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467"
+[0m23:02:17.907985 [debug] [Thread-3 (]: On test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    product_id as unique_field,
+    count(*) as n_records
+
+from DE_ECOMMERCE_DB.silver.stg_products
+where product_id is not null
+group by product_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "ecommerce_medallion", "target_name": "dev", "node_id": "test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467"} */
+[0m23:02:17.928674 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.124 seconds
+[0m23:02:17.930796 [info ] [Thread-5 (]: 13 of 15 PASS unique_stg_order_items_order_item_id ............................. [[32mPASS[0m in 0.13s]
+[0m23:02:17.931250 [debug] [Thread-5 (]: Finished running node test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108
+[0m23:02:18.035355 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.127 seconds
+[0m23:02:18.036669 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.130 seconds
+[0m23:02:18.039956 [info ] [Thread-3 (]: 15 of 15 PASS unique_stg_products_product_id ................................... [[32mPASS[0m in 0.16s]
+[0m23:02:18.043408 [debug] [Thread-3 (]: Finished running node test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467
+[0m23:02:18.042566 [info ] [Thread-4 (]: 14 of 15 PASS unique_stg_orders_order_id ....................................... [[32mPASS[0m in 0.16s]
+[0m23:02:18.044235 [debug] [Thread-4 (]: Finished running node test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a
+[0m23:02:18.045955 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:02:18.046316 [debug] [MainThread]: Connection 'test.ecommerce_medallion.unique_stg_customers_customer_id.c7614daada' was left open.
+[0m23:02:18.046602 [debug] [MainThread]: On test.ecommerce_medallion.unique_stg_customers_customer_id.c7614daada: Close
+[0m23:02:18.174142 [debug] [MainThread]: Connection 'test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467' was left open.
+[0m23:02:18.175224 [debug] [MainThread]: On test.ecommerce_medallion.unique_stg_products_product_id.7d950a1467: Close
+[0m23:02:18.307436 [debug] [MainThread]: Connection 'test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a' was left open.
+[0m23:02:18.308524 [debug] [MainThread]: On test.ecommerce_medallion.unique_stg_orders_order_id.e3b841c71a: Close
+[0m23:02:18.440420 [debug] [MainThread]: Connection 'test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108' was left open.
+[0m23:02:18.441005 [debug] [MainThread]: On test.ecommerce_medallion.unique_stg_order_items_order_item_id.90e333a108: Close
+[0m23:02:18.570285 [info ] [MainThread]: 
+[0m23:02:18.571167 [info ] [MainThread]: Finished running 15 data tests in 0 hours 0 minutes and 2.62 seconds (2.62s).
+[0m23:02:18.575107 [debug] [MainThread]: Command end result
+[0m23:02:18.616248 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/manifest.json
+[0m23:02:18.618344 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/semantic_manifest.json
+[0m23:02:18.620278 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/osi_document.json
+[0m23:02:18.625905 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/sowrabhmanjappa/Documents/_Portfolio/_SNOW-DE/Projects/ecommerce-medallion-pipeline/ecommerce_medallion/target/run_results.json
+[0m23:02:18.626106 [info ] [MainThread]: 
+[0m23:02:18.626316 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:02:18.626486 [info ] [MainThread]: 
+[0m23:02:18.626668 [info ] [MainThread]: Done. PASS=15 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=15
+[0m23:02:18.630448 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 3.6954625, "process_in_blocks": "0", "process_kernel_time": 0.31046, "process_mem_max_rss": "249004032", "process_out_blocks": "0", "process_user_time": 2.398427}
+[0m23:02:18.630881 [debug] [MainThread]: Command `dbt test` succeeded at 23:02:18.630820 after 3.70 seconds
+[0m23:02:18.631111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1146456d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114593750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b9a8e10>]}
+[0m23:02:18.631311 [debug] [MainThread]: Flushing usage events
+[0m23:02:18.634838 [debug] [MainThread]: An error was encountered while trying to flush usage events
