@@ -252,3 +252,27 @@ LIST @DE_ECOMMERCE_DB.BRONZE.RAW_STAGE;
 - Dataset generation script (ecommerce: orders, order_items, customers, products).
 - dbt project scaffold + bronze/silver/gold models.
 - Airflow `docker-compose.yaml` setup (webserver/scheduler/triggerer/metadata DB) and the pipeline DAG.
+
+---
+
+## Interview Q&A — custom Airflow images (study this, recite out loud)
+
+Hit while wiring dbt into the Airflow worker container — dbt runs as a shell command, not a Python import, so it has to live inside the same image the task executes in, not just the host `.venv`.
+
+**Q: Why do companies often need custom Airflow images?**
+A: "Airflow's base image only has Airflow itself installed. The moment a DAG needs to run a tool like dbt, or a specific library version, that has to be baked into the image, since tasks execute inside the container, not on the host."
+
+**Q: Have you ever built a custom Airflow image?**
+A: "Yes — I ran plain Airflow via docker-compose for a project, and when I needed a task to run `dbt run`, I hit exactly this: dbt wasn't in the container. I wrote a small Dockerfile extending `apache/airflow`, added `pip install dbt-core dbt-snowflake`, and rebuilt the image so the worker/scheduler containers had dbt available as a CLI command."
+
+**Q: Why not just install dbt at runtime instead of baking it into the image?**
+A: "Reproducibility — if you install at runtime, every task run redownloads packages, is slower, and can silently drift to a different version over time. Baking it into the image at build time pins the exact version so every task run is identical."
+
+**Q: What's the alternative to putting everything in one custom image?**
+A: "`KubernetesPodOperator` or `DockerOperator` — instead of one big image with every tool installed, each task spins up its own short-lived container with just what it needs. Keeps the core Airflow image lean and avoids dependency conflicts between tools."
+
+**Q: Why did you choose plain docker-compose over Astro CLI / a managed service?**
+A: "To actually see the underlying architecture — webserver, scheduler, triggerer, metadata DB — and the real problems around it, like needing a custom image. Astro CLI or a managed service like MWAA builds that custom image for you automatically from a requirements file, which is convenient in production but would've hidden the mechanics I wanted to learn."
+
+**Q: Why mount your DAGs folder as a volume instead of copying it into the image?**
+A: "So editing a DAG file doesn't require rebuilding the image — the scheduler just picks up the change on disk. You only rebuild the image when *dependencies* change, not when pipeline logic changes."
