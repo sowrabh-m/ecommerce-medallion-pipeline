@@ -1,0 +1,32 @@
+x-airflow-common:
+  &airflow-common-override
+  image: ecommerce-airflow:dbt
+  build:
+    context: .
+    dockerfile: Dockerfile
+  environment:
+    &airflow-common-env-override
+    DBT_PROFILES_DIR: /opt/airflow/dbt_profiles
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+  volumes:
+    - ${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags
+    - ${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs
+    - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins
+    - ../ecommerce_medallion:/opt/airflow/dbt/ecommerce_medallion
+    - ./dbt_profiles:/opt/airflow/dbt_profiles
+    - /Users/sowrabhmanjappa/.ssh/cdr_dbt_key.p8:/opt/airflow/keys/dbt_key.p8:ro
+    - /Users/sowrabhmanjappa/.aws:/home/airflow/.aws:ro
+
+services:
+  airflow-scheduler:
+    <<: *airflow-common-override
+  airflow-dag-processor:
+    <<: *airflow-common-override
+  airflow-apiserver:
+    <<: *airflow-common-override
+  airflow-worker:
+    <<: *airflow-common-override
+  airflow-triggerer:
+    <<: *airflow-common-override
+  airflow-init:
+    <<: *airflow-common-override
