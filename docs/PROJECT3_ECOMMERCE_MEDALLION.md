@@ -18,8 +18,8 @@ Every project in the 10-project roadmap gets its own dataset built from scratch,
 ### Decision 2 — Airflow via plain `docker-compose.yaml`
 Not Astro CLI. Astro CLI hides the actual Airflow architecture behind its own tooling — since this is the first Airflow project, the goal is to understand webserver/scheduler/triggerer/metadata-DB wiring directly, not through an abstraction layer.
 
-### Decision 3 — Naming convention: drop "portfolio" / "sowrabh"
-Starting this project, all new resource names (S3 buckets, IAM roles/policies, Snowflake objects) use a `de-` / `DE_` prefix — no `sowrabh-` or `portfolio` anywhere. Reasoning: these projects are being built toward production-grade depth, not treated as a portfolio checkbox. Projects 1 & 2's existing resources keep their old names for now — they'll be torn down and rebuilt under this convention later, once all 10 concepts are learned.
+### Decision 3 — Naming convention
+Resource names (S3 buckets, IAM roles/policies, Snowflake objects) use a `de-` / `DE_` prefix from this project onward. Projects 1 & 2's existing resources keep their prior naming.
 
 ### Decision 4 — AWS via CLI this project, Console from Project 4 onward
 Resume already claims solid AWS hands-on experience (originally built via Console), but CLI syntax specifically has gone rusty. Project 3 is used to relearn CLI (it's "fixed syntax," easy to drill). From Project 4 onward, AWS work switches back to Console — clicking through IAM role/trust-policy/permissions-policy relationships reinforces the mental model better than reading CLI JSON.

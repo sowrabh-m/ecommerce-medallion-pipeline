@@ -18,8 +18,8 @@ Ee project ge hosa concept: **Apache Airflow orchestration** (plain `docker-comp
 ### Decision 2 — Airflow plain `docker-compose.yaml` inda
 Astro CLI alla. Astro CLI real Airflow architecture na tanna tooling hinde hide maadutte — idhu modhalane Airflow project agiruvudrinda, goal webserver/scheduler/triggerer/metadata-DB wiring nalli direct agi understand maadodhu, abstraction layer through alla.
 
-### Decision 3 — Naming convention: "portfolio" / "sowrabh" drop
-Ee project inda start aagi, ella hosa resource names (S3 buckets, IAM roles/policies, Snowflake objects) `de-` / `DE_` prefix use maaduthave — `sowrabh-` illa "portfolio" yelli illa. Reason: ee projects production-grade depth kade build aaguthiruvudhu, portfolio checkbox tarah alla. Project 1 & 2 dha existing resources ivaga tanna old names ulisikoluthave — ella 10 concepts learn aada mele, ee convention kelagide teardown + rebuild aaguthave.
+### Decision 3 — Naming convention
+Ee project inda start aagi, resource names (S3 buckets, IAM roles/policies, Snowflake objects) `de-` / `DE_` prefix use maaduthave. Project 1 & 2 dha existing resources ivaga tanna old names ulisikoluthave.
 
 ### Decision 4 — AWS ee project ge CLI, Project 4 inda Console
 Resume nalli already solid AWS hands-on experience claim ide (originally Console inda build madidhu), aadre CLI syntax specifically rusty aagide. Project 3 CLI relearn maadoke use aaguthade (idhu "fixed syntax," easy agi drill maadoke aguthade). Project 4 inda AWS work Console ge switch aaguthade — IAM role/trust-policy/permissions-policy relationships click maadi nododhu, CLI JSON odhoke intha better mental model kattutte.
